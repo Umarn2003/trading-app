@@ -3,30 +3,77 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import BenefitsSection from "./components/Cfdally";
+import TradingOffers from "./components/Tradingoffers";
+import { ShieldCheck, Zap, Globe, Headphones } from "lucide-react";
+import { Oppurtunities } from "./components/Oppurtunities";
+import DepositSection from "./components/DepositSection";
+import DesignProcessSection from "./components/Advantages";
+import WhyChooseUs from "./components/DepositSection";
+import { FAQForTrading } from "./components/FAQ";
+import { ContactForm } from "./components/ContactForm";
+import Footer from "./components/Footer";
+import Home from "./components/Cfdexplution";
+import Link from "next/link";
+import Hero from "./components/Hero";
+import OurStory from "./components/OurStory";
+import BouncingShape from "./components/Bouncing";
+import AnimatedSection from "./components/AnimatedSection";
+import AuroraLift from "./components/FadeSlideIn";
+import UltimateReveal from "./components/FadeSlideIn";
+import RightBlurReveal from "./components/FadeSlideIn";
+import Animations from "./components/FadeSlideIn";
+import FadeSlideInn from "./components/FadeSlideInn";
+import RotateVertical from "./components/RotateVertical";
 
 const slides = [
   {
-    image: "/real1.png",
+    image: "/tradingplatform-2.png",
     title: "Discover Premium Living Spaces",
-    description:
-      "Luxury homes designed with elegance,",
+    description: "Luxury homes designed with elegance,",
   },
   {
-    image: "/AI.png",
+    image: "/tradingplatform.png",
     title: "Experience Modern Architecture",
-    description:
-      "Smart designs that reflect innovation.",
+    description: "Smart designs that reflect innovation.",
   },
   {
-    image: "/real1.png",
+    image: "/tradingplatform-3.png",
     title: "Invest in Your Future Today",
-    description:
-      "High-value properties located in prime.",
+    description: "High-value properties located in prime.",
   },
 ];
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
+  const features = [
+    {
+      title: "Secure & Reliable",
+      description: "Your funds and data are protected at all times.",
+    },
+    {
+      title: "Fast Execution",
+      description: "Place trades instantly with high-speed execution.",
+    },
+    {
+      title: "Global Markets",
+      description: "Access Forex, Crypto, Indices, ETFs from one platform.",
+    },
+    {
+      title: "24/7 Support",
+      description: "Expert assistance whenever you need it.",
+    },
+  ];
+
+  const [tilt, setTilt] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
+    setTilt({ x, y });
+  };
+
+  const handleMouseLeave = () => setTilt({ x: 0, y: 0 });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -37,93 +84,132 @@ export default function HeroSection() {
 
   return (
     <>
-      <section className="relative h-screen w-full overflow-hidden">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === current ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <Image
-              src={slide.image}
-              alt={slide.title}
-              fill
-              className="object-cover"
-              priority={index === 0}
-            />
-          </div>
-        ))}
+    <div className="bg-black">
+      <Animations />
 
-        <div className="absolute inset-0 bg-black/50" />
-
-        <div className="relative z-10 flex h-full items-start mt-[300px] mr-[200px]">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <h1 className="text-2xl md:text-6xl font-bold text-white leading-tight">
-                {slides[current].title}
-              </h1>
-
-              <p className="mt-5 text-lg md:text-xl text-gray-200 font-sans">
-                {slides[current].description}
-              </p>
-
-              <div className="mt-8">
-                <button className="rounded-full border border-white/40 px-10 py-2 border-r-white text-white font-semibold hover:bg-white/10 transition">
-                  Start Trading
-                </button>
-              </div>
-            </div>
-          </div>
+         <RotateVertical>
+        <div id="about">
+          <OurStory/>
         </div>
-      </section>
+        </RotateVertical>
 
-      <section className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center mt-18">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-yellow-500">
-                Our Story
+         <FadeSlideInn>
+        <div id="trading">
+          <BenefitsSection />
+        </div>
+        </FadeSlideInn>
+
+
+      <FadeSlideInn> 
+        <div id="opportunities">
+          <Oppurtunities/>
+        </div>
+        </FadeSlideInn>
+
+
+<FadeSlideInn> 
+        <div id="tradingoffers">
+          <TradingOffers />
+        </div>
+</FadeSlideInn>
+
+<FadeSlideInn>
+        <section className="relative bg-black overflow-hidden py-32 px-6 md:px-10">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div
+              className="relative w-full h-80 md:h-125 rounded-3xl overflow-hidden shadow-2xl cursor-pointer"
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div
+                className="absolute inset-0 transition-transform duration-500"
+                style={{
+                  transform: `rotateY(${
+                    tilt.x
+                  }deg) rotateX(${-tilt.y}deg) scale(1.05)`,
+                }}
+              >
+                <Image
+                  src="/tradingplatform.png"
+                  alt="Why Choose Us"
+                  fill
+                  className="object-cover rounded-3xl"
+                />
+                <div className="absolute inset-0 bg-linear-to-tr from-black/60 via-transparent to-black/30 rounded-3xl animate-gradient-x"></div>
+              </div>
+
+              <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-yellow-400/20 animate-pulse"></div>
+              <div className="absolute bottom-10 right-8 w-16 h-16 rounded-full bg-blue-500/20 animate-pulse"></div>
+              <div className="absolute top-1/2 left-1/4 w-8 h-8 rounded-full bg-red-400/20 animate-pulse"></div>
+            </div>
+
+            <div className="relative bg-linear-to-br from-gray-900/60 via-black/40 to-black/70 p-8 rounded-2xl shadow-2xl flex flex-col justify-center space-y-8">
+              <h3 className="bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text text-sm font-semibold uppercase tracking-wide">
+                Why Choose Us
+              </h3>
+              <h2
+                className="text-4xl md:text-5xl font-bold leading-snug drop-shadow-lg bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text"
+              >
+                Experience Ultra-Premium CFD Trading
               </h2>
-
-              <p className="mt-6 text-lg text-gray-400 max-w-xl">
-                At Trade001, we provide a modern and reliable CFD trading
-                platform built to meet the demands of today’s global markets.
-                Our focus is on delivering fast execution, real time market
-                analytics, and a secure trading environment that empowers
-                traders to trade with confidence.
-                <br />
-                <br></br>
-                <br></br>
-                By combining advanced technology with transparent trading
-                conditions, we make it easier for both beginners and
-                professional traders to access Forex, Crypto, Indices, ETFs,
-                from a single platform. Our goal is to simplify trading while
-                offering powerful tools, competitive pricing, and flexible
-                leverage.
+              <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-md drop-shadow-md">
+                Trade001 combines speed, security, and advanced technology to
+                empower traders at every level. Our platform provides a seamless
+                and intuitive experience across global markets.
               </p>
 
-              <div className="mt-8">
-                <button className="rounded-xl bg-blue-600 px-8 py-3 text-white font-semibold shadow-lg shadow-blue-600/30 hover:bg-blue-500 transition">
-                  Contact Us
-                </button>
+              <div className="grid grid-cols-1 gap-5">
+                {features.map((feature, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-start gap-4 p-4 rounded-xl group bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:translate-x-2 hover:scale-105 transition-all duration-500"
+                  >
+                    <div>
+                      <h4 className="text-white font-semibold group-hover:text-yellow-400 transition-colors">
+                        {feature.title}
+                      </h4>
+                      <p className="text-gray-300 text-sm">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-
-            <div className="relative h-[320px] lg:h-[420px] w-full">
-              <Image
-                src="/real1.png"
-                alt="Luxury Property"
-                fill
-                className="object-cover rounded-2xl shadow-xl"
-              />
-            </div>
           </div>
+
+          <div className="absolute inset-0 'bg-[radial-gradient(circle,_rgba(255,255,255,0.02)_1px,_transparent_1px)]' bg-size-60px_60px pointer-events-none animate-pulse"></div>
+        </section>
+        </FadeSlideInn>
+<FadeSlideInn>
+        <div id="deposit">
+          <DepositSection />
         </div>
-      </section>
+      </FadeSlideInn>
+
+      <FadeSlideInn>
       <div>
-        <BenefitsSection />
+        <Home/>
       </div>
+      </FadeSlideInn>
+      <FadeSlideInn>
+        <div id="cfdexplaination">
+          <DesignProcessSection />
+        </div>
+        </FadeSlideInn>
+
+        <FadeSlideInn>
+        <div>
+          <FAQForTrading />
+        </div>
+        </FadeSlideInn>
+
+        <FadeSlideInn>
+        <div id="contactus">
+          <ContactForm />
+        </div>
+        </FadeSlideInn>
+    </div>
     </>
   );
 }
