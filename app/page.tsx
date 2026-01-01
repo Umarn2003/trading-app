@@ -23,7 +23,6 @@ import UltimateReveal from "./components/FadeSlideIn";
 import RightBlurReveal from "./components/FadeSlideIn";
 import Animations from "./components/FadeSlideIn";
 import FadeSlideInn from "./components/FadeSlideInn";
-import RotateVertical from "./components/RotateVertical";
 
 const slides = [
   {
@@ -83,15 +82,18 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <>
     <div className="bg-black">
-      <Animations />
+    
+      <Animations>
+        
+      </Animations>
 
-         <RotateVertical>
+
+         <FadeSlideInn>
         <div id="about">
           <OurStory/>
         </div>
-        </RotateVertical>
+       </FadeSlideInn>
 
          <FadeSlideInn>
         <div id="trading">
@@ -210,6 +212,5 @@ export default function HeroSection() {
         </div>
         </FadeSlideInn>
     </div>
-    </>
   );
 }

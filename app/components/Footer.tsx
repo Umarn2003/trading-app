@@ -1,20 +1,28 @@
-"use client";
+'use client';
 import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-black/80 backdrop-blur-lg border-t border-yellow-400">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between ml-80">
-          <div className="hidden md:flex items-center gap-10 text-white/70">
-            <Link href="/pages/Kyc">Kyc</Link>
-            <Link href="/pages/Privacypolicy">Privacy Policy</Link>
-            <Link href="/pages/Disclaimer">Disclaimer</Link>
-            <Link href="/pages/ArbritragetRading">Arbitrage Trading</Link>
-            <Link href="/pages/Smfs">SMSF</Link>
+    <footer className="w-full bg-black backdrop-blur-lg border-t border-yellow-400">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+        {/* Container for links */}
+        <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 md:gap-6">
+          
+          {/* Left links - wrap on small screens */}
+          <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 md:gap-6 text-white/70">
+            <Link href="/pages/Kyc" className="hover:text-yellow-500 transition">KYC</Link>
+            <Link href="/pages/Privacypolicy" className="hover:text-yellow-500 transition">Privacy Policy</Link>
+            <Link href="/pages/Disclaimer" className="hover:text-yellow-500 transition">Disclaimer</Link>
+            <Link href="/pages/ArbritragetRading" className="hover:text-yellow-500 transition">Arbitrage Trading</Link>
+            <Link href="/pages/Smfs" className="hover:text-yellow-500 transition">SMSF</Link>
+          </div>
+
+          {/* Optional Right side info or copyright */}
+          <div className="mt-4 md:mt-0 text-center md:text-right text-white/50 text-sm">
+            &copy; {new Date().getFullYear()} MyCompany. All rights reserved.
           </div>
         </div>
       </div>
     </footer>
   );
 }
-

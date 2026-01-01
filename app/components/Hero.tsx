@@ -2,70 +2,64 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-   <section
-      className="relative min-h-screen overflow-hidden text-white
-  bg-black"
-    >
+    <section className="relative min-h-screen overflow-hidden text-white bg-black">
+      {/* Background Image */}
       <Image
         src="/bg.png"
         alt="Lightning Background"
         fill
         className="object-cover opacity-50"
       />
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 sm:pt-24 lg:pt-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Left Side */}
           <div>
-            <h1 className="text-[42px] font-extrabold leading-[1.15] tracking-tight sm:text-5xl xl:text-6xl text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold leading-[1.15] tracking-tight text-white mt-55">
               Markets move fast.
               <br />
               So can you.
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg text-white/75">
+            <p className="mt-4 sm:mt-6 max-w-lg text-base sm:text-lg text-white/75">
               Trade global markets with our award-winning trading platform.
             </p>
 
-            <div className="mt-7 flex gap-4">
-              <button className="rounded-2xl  duration-300 transition bg-yellow-500 px-14 py-3 font-semibold shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:bg-black hover:text-white/70">
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
+              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-14 py-3 font-semibold shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:bg-black hover:text-white/70 transition duration-300">
                 Start trading
               </button>
-              <button className="rounded-2xl transition duration-300 bg-yellow-500 px-12 py-3  font-semibold shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:bg-black hover:text-white/70">
+              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-12 py-3 font-semibold shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:bg-black hover:text-white/70 transition duration-300">
                 Try free demo
               </button>
             </div>
           </div>
 
-          <div className="relative ml-20 mt-20 lg:mt-20 opacity-90">
-            <Image
-              src="/heropic.jpg"
-              alt="Trading platform"
-              width={700}
-              height={800}
-              className="relative z-10 rounded-3xl mt-20"
-              priority
-            />
-          </div>
+          {/* Right Side (can be used for image/illustration in future) */}
+          <div className="hidden lg:block">{/* Optional: add hero image or graphic */}</div>
         </div>
 
-        <div className=" flex flex-wrap items-center gap-8 text-sm text-white/80 ">
-          <div className="border-r-2 border-white/70 px-2">
-            <p className="text-lg font-bold text-white mr-4">32 Million+</p>
+        {/* Stats */}
+        <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-8 text-sm sm:text-base text-white/80 mt-25 sm:mt-16">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4">
+            <p className="text-sm sm:text-xl font-bold text-white">32 Million+</p>
             <p>Registered customers</p>
           </div>
 
-          <div className="border-r-2 border-white/70 px-2">
-            <p className="text-lg font-bold text-white">
-              <span className="text-green-800">★ </span>4.2
+          <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4">
+            <p className="text-lg sm:text-xl font-bold text-white">
+              <span className="text-green-500">★ </span>4.2
             </p>
             <p>Trustpilot rating</p>
           </div>
 
-          <div className="border-r-2 border-white/70 px-2">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4">
             <p className="font-semibold text-white">London Stock Exchange</p>
             <p>Listed since 2013</p>
           </div>
 
-          <div>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center">
             <p className="font-semibold text-white">Chicago Bulls</p>
             <p>Official partner</p>
           </div>

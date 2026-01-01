@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import {
   Activity,
   Award,
@@ -43,6 +44,30 @@ export default function BenefitsSection() {
     },
   ];
 
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const [visibleCards, setVisibleCards] = useState<number[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = Number(entry.target.getAttribute("data-index"));
+          if (entry.isIntersecting) {
+            setVisibleCards((prev) =>
+              prev.includes(index) ? prev : [...prev, index]
+            );
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cardsRef.current.forEach((card) => card && observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="relative bg-black py-32">
       <h1 className="text-7xl text-center mb-16 bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
@@ -50,6 +75,7 @@ export default function BenefitsSection() {
       </h1>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
+        {/* LEFT CONTENT */}
         <div className="lg:col-span-1">
           <h2 className="text-5xl font-bold bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text leading-tight mb-6">
             Key <br /> Highlights
@@ -67,21 +93,40 @@ export default function BenefitsSection() {
           </div>
         </div>
 
+        {/* CARDS */}
         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-14 gap-y-16">
           {benefits.map((item, i) => {
-            const Icon = item.icon; 
+            const Icon = item.icon;
+            const isVisible = visibleCards.includes(i);
+
             return (
-              <div key={i}>
-                <div className="w-14 h-14 rounded-xl mb-6 flex items-center justify-center
-                                bg-gradient-to-br from-black/50 to-
-                                shadow-[0_0_30px_rgba(79,70,229,0.4)]">
+              <div
+                key={i}
+                ref={(el) => (cardsRef.current[i] = el)}
+                data-index={i}
+                style={{ transitionDelay: `${i * 120}ms` }}
+                className={`transform transition-all duration-700 ease-out
+                  ${
+                    isVisible
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-14"
+                  }`}
+              >
+                <div
+                  className="w-14 h-14 rounded-xl mb-6 flex items-center justify-center
+                  bg-gradient-to-br from-black/60 to-black/20
+                  shadow-[0_0_30px_rgba(234,179,8,0.35)]"
+                >
                   <Icon className="w-8 h-8 text-yellow-500" />
                 </div>
 
-                <h3 className="text-xl font-semibold mb-3 bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text leading-snug">
+                <h3 className="text-xl font-semibold mb-3 bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
                   {item.title}
                 </h3>
-                <p className="text-white/60 text-lg leading-relaxed">{item.desc}</p>
+
+                <p className="text-white/60 text-lg leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             );
           })}

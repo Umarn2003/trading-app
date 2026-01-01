@@ -19,10 +19,6 @@ module.exports = {
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
       },
-      animation: {
-        slide: "slide 2s ease-in-out infinite",
-        fadeUp: "fadeUp 1s ease-out forwards",
-      },
     },
   },
   plugins: [],
