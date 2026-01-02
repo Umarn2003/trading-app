@@ -12,34 +12,34 @@ export const Oppurtunities: React.FC = () => {
     {
       id: 1,
       number: "01",
-      title: "Forex Trading",
+      title: "Trading Forex",
       image: "/forextrading.png",
       description:
-        "Trade currencies globally 24/5, capitalize on price movements, hedge risks, and access the world’s largest and most liquid market with advanced tools and opportunities for profit.",
+        "Négociez des devises mondialement 24/5, capitalisez sur les mouvements de prix, couvrez les risques et accédez au marché le plus grand et le plus liquide du monde avec des outils avancés et des opportunités de profit.",
     },
     {
       id: 2,
       number: "02",
-      title: "Crypto Trading",
+      title: "Trading Crypto",
       image: "/cryptotrading.png",
       description:
-        "Buy, sell, and trade cryptocurrencies like Bitcoin and Ethereum on a secure global market, leveraging volatility for profit and participating in the fast-growing digital economy.",
+        "Achetez, vendez et négociez des cryptomonnaies comme Bitcoin et Ethereum sur un marché mondial sécurisé, tirant parti de la volatilité pour le profit et participant à l'économie numérique en pleine croissance.",
     },
     {
       id: 3,
       number: "03",
-      title: "Indices Trading",
+      title: "Trading d'Indices",
       image: "/stockmarket.png",
       description:
-        "Trade major stock market indices like S&P 500, NASDAQ, and FTSE to gain exposure to the overall market performance and capitalize on global economic trends.",
+        "Négociez les principaux indices boursiers comme le S&P 500, le NASDAQ et le FTSE pour vous exposer aux performances globales du marché et capitaliser sur les tendances économiques mondiales.",
     },
     {
       id: 4,
       number: "04",
-      title: "EFTs Trading",
+      title: "Trading d'ETFs",
       image: "/comodities.png",
       description:
-        "Invest in diversified portfolios through Exchange-Traded Funds (ETFs), allowing you to trade multiple assets like stocks, bonds, or commodities in a single, flexible investment.",
+        "Investissez dans des portefeuilles diversifiés grâce aux fonds négociés en bourse (ETFs), vous permettant de négocier plusieurs actifs comme des actions, des obligations ou des matières premières dans un seul investissement flexible.",
     },
   ];
 
@@ -95,10 +95,10 @@ export const Oppurtunities: React.FC = () => {
         {/* HEADER */}
         <div className="mb-16 text-center">
           <p className="text-2xl md:text-5xl font-bold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
-            Our Opportunities
+            Nos Opportunités
           </p>
           <h2 className="text-lg text-white/70">
-            Leading CFD & Forex Broker for Professional Traders
+            Courtier CFD et Forex de premier plan pour traders professionnels
           </h2>
         </div>
 
@@ -106,7 +106,7 @@ export const Oppurtunities: React.FC = () => {
           <div className="relative h-[60vh]">
             <img
               src="/cfd copy.png"
-              alt="forex trading pic"
+              alt="image de trading forex"
               className="relative w-full h-full object-cover rounded-lg shadow-lg animate-image-slide"
             />
             <div className="" />

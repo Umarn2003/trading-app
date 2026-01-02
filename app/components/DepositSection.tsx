@@ -7,22 +7,22 @@ const features = [
   {
     id: 1,
     icon: Wallet,
-    title: "Straightforward and competitive charges",
+    title: "Frais simples et compétitifs",
     desc: [
-      "0% opening / closing trades fees",
-      "0% deposit and withdrawal fees",
+      "0% frais d'ouverture / clôture de trades",
+      "0% frais de dépôt et de retrait",
     ],
     learnMore: true,
   },
   {
     id: 2,
     icon: Timer,
-    title: "Fast withdrawals processing",
+    title: "Traitement rapide des retraits",
   },
   {
     id: 3,
     icon: CreditCard,
-    title: "Multiple global payment methods",
+    title: "Méthodes de paiement globales multiples",
   },
 ];
 
@@ -30,10 +30,10 @@ const payments = [
   { name: "Visa", src: "/1.png" },
   { name: "Mastercard", src: "/2.png" },
   { name: "PayPal", src: "/3.png" },
-  { name: "Bank Transfer", src: "/4.png" },
-  { name: "Bank Transfer", src: "/5.png" },
-  { name: "Bank Transfer", src: "/6.png" },
-  { name: "Bank Transfer", src: "/7.png" },
+  { name: "Virement Bancaire", src: "/4.png" },
+  { name: "Virement Bancaire", src: "/5.png" },
+  { name: "Virement Bancaire", src: "/6.png" },
+  { name: "Virement Bancaire", src: "/7.png" },
 ];
 
 export default function TakeControlSection() {
@@ -119,7 +119,7 @@ export default function TakeControlSection() {
         }`}
       >
         <h2 className="text-2xl md:text-5xl font-semibold mb-20 bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
-          Take control of your funds
+          Prenez le contrôle de vos fonds
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-24 items-start">
@@ -162,7 +162,7 @@ export default function TakeControlSection() {
                     href="#"
                     className="inline-flex items-center gap-1 text-white mt-4 hover:text-yellow-500 transition text-sm"
                   >
-                    Learn more <span className="text-lg">›</span>
+                    En savoir plus <span className="text-lg">›</span>
                   </a>
                 )}
               </div>
@@ -192,7 +192,7 @@ export default function TakeControlSection() {
             active ? "active" : ""
           }`}
         >
-          Open account
+          Ouvrir un compte
         </button>
       </div>
     </section>

@@ -6,48 +6,52 @@ import { motion } from "framer-motion";
 export default function DesignProcessSection() {
   const cards = [
     {
-      title: "Secure Trading",
-      description: "Advanced security keeps your funds and data protected.",
+      title: "Trading Sécurisé",
+      description: "Une sécurité avancée protège vos fonds et vos données.",
       outputs: [
-        "End-to-end data encryption",
-        "Multi-layer account protection",
-        "Secure fund custody systems",
+        "Chiffrement des données de bout en bout",
+        "Protection de compte multi-couches",
+        "Systèmes de garde de fonds sécurisés",
       ],
     },
     {
-      title: "Fast Execution",
-      description: "Place trades instantly with high speed order execution.",
+      title: "Exécution Rapide",
+      description:
+        "Placez des ordres instantanément avec une exécution à haute vitesse.",
       outputs: [
-        "Ultra-low latency processing",
-        "Instant confirmations",
-        "Optimized infrastructure",
+        "Traitement à latence ultra-faible",
+        "Confirmations instantanées",
+        "Infrastructure optimisée",
       ],
     },
     {
-      title: "Global Markets",
-      description: "Access Forex, Crypto, Indices, ETFs in one place.",
+      title: "Marchés Mondiaux",
+      description:
+        "Accédez au Forex, Crypto, Indices, ETFs en un seul endroit.",
       outputs: [
-        "Multi-asset access",
-        "Global connectivity",
-        "Unified dashboard",
+        "Accès multi-actifs",
+        "Connectivité mondiale",
+        "Tableau de bord unifié",
       ],
     },
     {
-      title: "Real-Time Insights",
-      description: "Trade smarter using live market data and analytics.",
+      title: "Informations en Temps Réel",
+      description:
+        "Négociez plus intelligemment en utilisant des données de marché en direct et des analyses.",
       outputs: [
-        "Live charts & feeds",
-        "Advanced analytics",
-        "Custom indicators",
+        "Graphiques et flux en direct",
+        "Analyses avancées",
+        "Indicateurs personnalisés",
       ],
     },
     {
-      title: "24/7 Support",
-      description: "Get expert help anytime you need it data and anayltics.",
+      title: "Support 24/7",
+      description:
+        "Obtenez une aide experte à tout moment dont vous avez besoin.",
       outputs: [
-        "Always-on assistance",
-        "Live chat & tickets",
-        "Dedicated specialists",
+        "Assistance toujours disponible",
+        "Chat en direct et tickets",
+        "Spécialistes dédiés",
       ],
     },
   ];
@@ -55,14 +59,14 @@ export default function DesignProcessSection() {
   const duplicatedCards = [...cards, ...cards];
 
   return (
-    <section className="bg-black text-white py-32 overflow-hidden">
+    <section className="bg-black text-white py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto ">
           <h2 className="text-2xl md:text-5xl font-semibold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
-            Advantages of CFD Trading
+            Avantages du Trading CFD
           </h2>
           <p className="text-white/60 mt-4 md:text-lg text-sm">
-            Powerful features designed for modern traders.
+            Fonctionnalités puissantes conçues pour les traders modernes.
           </p>
         </div>
 
@@ -90,8 +94,8 @@ export default function DesignProcessSection() {
               <div
                 key={index}
                 className="
-          min-w-[320px] md:min-w-105 rounded-2xl p-8
-          bg-linear-to-br from-yellow-500 via-black/60 to-yellow-500
+          min-w-[320px] md:w-120 rounded-2xl p-8
+          bg-linear-to-br from-yellow-400/85 via-black/60 to-yellow-400/85
           backdrop-blur-lg border border-white/30
           shadow-lg
         "

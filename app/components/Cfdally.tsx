@@ -13,33 +13,33 @@ import {
 export default function BenefitsSection() {
   const benefits = [
     {
-      title: "Secure Trading",
-      desc: "Advanced security keeps your funds and data protected at all times.",
+      title: "Trading Sécurisé",
+      desc: "Une sécurité avancée protège vos fonds et vos données en permanence.",
       icon: ChartCandlestick,
     },
     {
-      title: "Fast Execution",
-      desc: "Place trades instantly with high speed order execution.",
+      title: "Exécution Rapide",
+      desc: "Placez des ordres instantanément avec une exécution à haute vitesse.",
       icon: Activity,
     },
     {
-      title: "Real Time Insights",
-      desc: "Trade smarter using live market data and analytics.",
+      title: "Informations en Temps Réel",
+      desc: "Négociez plus intelligemment en utilisant des données de marché en direct et des analyses.",
       icon: Brain,
     },
     {
-      title: "Global Markets",
-      desc: "Access Forex, Crypto, Indices, ETFs in one place.",
+      title: "Marchés Mondiaux",
+      desc: "Accédez au Forex, Crypto, Indices, ETFs en un seul endroit.",
       icon: Globe,
     },
     {
-      title: "Monthly Competition",
-      desc: "Participate in free monthly competitions and compete for exclusive rewards.",
+      title: "Compétition Mensuelle",
+      desc: "Participez à des compétitions mensuelles gratuites et concourez pour des récompenses exclusives.",
       icon: Award,
     },
     {
-      title: "24/7 Support",
-      desc: "Get expert help anytime you need it.",
+      title: "Support 24/7",
+      desc: "Obtenez une aide experte à tout moment dont vous avez besoin.",
       icon: HandFist,
     },
   ];
@@ -71,25 +71,26 @@ export default function BenefitsSection() {
   return (
     <section className="relative bg-black py-32">
       <h2 className="text-2xl md:text-5xl text-center mb-16 bg-linear-to-br font-semibold from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
-        Your CFD ALLY
+        Votre ALLIÉ CFD
       </h2>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
         {/* LEFT CONTENT */}
         <div className="lg:col-span-1">
           <h3 className="text-xl md:text-4xl font-bold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text leading-tight mb-6">
-            Key <br /> Highlights
+            Points <br /> Clés
           </h3>
 
           <p className="text-white/70 mb-10 max-w-sm">
-            Power up your trading success with FundedNext & get maximum reward.
+            Boostez votre succès de trading avec FundedNext et obtenez la
+            récompense maximale.
           </p>
 
           <div className="space-y-4 text-white/80">
-            <p>• Low commissions</p>
-            <p>• Raw spreads</p>
-            <p>• Best packages</p>
-            <p>• Affordable</p>
+            <p>• Commissions faibles</p>
+            <p>• Spreads bruts</p>
+            <p>• Meilleurs forfaits</p>
+            <p>• Abordable</p>
           </div>
         </div>
 

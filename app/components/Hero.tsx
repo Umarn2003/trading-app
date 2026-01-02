@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background Image */}
       <Image
         src="/bg.png"
-        alt="Lightning Background"
+        alt="Arrière-plan éclair"
         fill
         className="object-cover opacity-30"
       />
@@ -17,48 +17,47 @@ export default function Hero() {
           {/* Left Side */}
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight text-white mt-55">
-              Markets move fast.
-              <br />
-              So can you.
+              Les marchés évoluent rapidement. Vous aussi.
             </h1>
 
             <p className="mt-4 sm:mt-6 max-w-lg text-base sm:text-lg text-white/75">
-              Trade global markets with our award-winning trading platform.
+              Les marchés évoluent rapidement. Vous aussi.
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
-              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-14 py-3 font-semibold shadow-[0_0_20px_rgba(59,130,246,0.6)] shadow-amber-100 hover:bg-transparent hover:text-white transition duration-300 hover:cursor-pointer hover:border-yellow-500">
-                Start trading
+              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-14 py-3 font-semibold hover:shadow-[0_0_10px_rgba(59,130,246,0.6)] shadow-amber-100 hover:bg-transparent hover:text-white transition duration-300 hover:cursor-pointer hover:border-yellow-500">
+                Commencez à trader
               </button>
-              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-12 py-3 font-semibold shadow-amber-100 hover:bg-transparent  hover:text-white/70 hover:border-yellow-500 hover:cursor-pointer transition duration-300">
-                Try free demo
+              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-14 py-3 font-semibold hover:shadow-[0_0_10px_rgba(59,130,246,0.6)] shadow-amber-100 hover:bg-transparent hover:text-white transition duration-300 hover:cursor-pointer hover:border-yellow-500">
+                Essayez la démo gratuite
               </button>
             </div>
           </div>
 
           {/* Right Side (can be used for image/illustration in future) */}
-          <div className="hidden lg:block">{/* Optional: add hero image or graphic */}</div>
+          <div className="hidden lg:block">
+            {/* Optional: add hero image or graphic */}
+          </div>
         </div>
 
         {/* Stats */}
         <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-8 text-sm md:text-lg text-white/80 mt-25 sm:mt-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4 gap-2">
             <p className="font-bold text-white">32 Million +</p>
-            <p className="text-white/50">Registered customers</p>
+            <p className="text-white/50">Clients enregistrés</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4 gap-2">
             <p className="font-bold text-white">
               <span className="text-green-500">★ </span>4.2
             </p>
-            <p className="text-white/50">Trustpilot rating</p>
+            <p className="text-white/50">Note Trustpilot</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center sm:pr-4 gap-2">
-            <p className="font-semibold text-white">Paris Stock Exchange</p>
-            <p className="text-white/50">Listed since 2013</p>
+            <p className="font-semibold text-white">Bourse de Paris</p>
+            <p className="text-white/50">Coté depuis 2013</p>
           </div>
-
         </div>
       </div>
     </section>

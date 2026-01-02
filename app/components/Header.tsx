@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; 
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -10,34 +10,60 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-yellow-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
-              MyLogo
+              MonLogo
             </span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6 lg:gap-10 text-white">
-            <Link href="#about" className="hover:text-yellow-500 transition">About</Link>
-            <Link href="#tradingoffers" className="hover:text-yellow-500 transition">Trading Offers</Link>
-            <Link href="#opportunities" className="hover:text-yellow-500 transition">Opportunities</Link>
-            <Link href="#deposit" className="hover:text-yellow-500 transition">Deposit</Link>
-            <Link href="#cfdexplaination" className="hover:text-yellow-500 transition">CFD Explaination</Link>
-            <Link href="#contactus" className="hover:text-yellow-500 transition">Contact Us</Link>
+            <Link href="#about" className="hover:text-yellow-400/85 transition">
+              À propos
+            </Link>
+            <Link
+              href="#tradingoffers"
+              className="hover:text-yellow-400/85 transition"
+            >
+              Offres de Trading
+            </Link>
+            <Link
+              href="#opportunities"
+              className="hover:text-yellow-400/85 transition"
+            >
+              Opportunités
+            </Link>
+            <Link
+              href="#deposit"
+              className="hover:text-yellow-400/85 transition"
+            >
+              Dépôt
+            </Link>
+            <Link
+              href="#cfdexplaination"
+              className="hover:text-yellow-400/85 transition"
+            >
+              Explication CFD
+            </Link>
+            <Link
+              href="#contactus"
+              className="hover:text-yellow-400/85 transition"
+            >
+              Nous contacter
+            </Link>
           </div>
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center gap-2 sm:gap-3 just">
             <Link href="/login">
-              <button className="rounded-full px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-black shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-linear-to-br from-black/5 via-yellow-500 to-black/5 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
-                Login
+              <button className="rounded-full px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-black shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-linear-to-br from-black/5 via-yellow-400/85 to-black/5 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+                Se connecter
               </button>
             </Link>
             <Link href="/signup">
-              <button className="rounded-full px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] hover:bg-linear-to-br from-white/70 via-yellow-500 to-black/20 hover:text-black hover:bg-black hover:scale-105 transition-all duration-300 hover:cursor-pointer">
-                Sign Up
+              <button className="rounded-full px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] hover:bg-linear-to-br from-white/70 via-yellow-400/85 to-black/20 hover:text-black hover:bg-black hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+                S'inscrire
               </button>
             </Link>
           </div>
@@ -59,23 +85,44 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col px-4 sm:px-6 space-y-3 text-white">
-          <Link href="#about" className="hover:text-yellow-500 transition">About</Link>
-          <Link href="#tradingoffers" className="hover:text-yellow-500 transition">Trading Offers</Link>
-          <Link href="#opportunities" className="hover:text-yellow-500 transition">Opportunities</Link>
-          <Link href="#deposit" className="hover:text-yellow-500 transition">Deposit</Link>
-          <Link href="#cfdexplaination" className="hover:text-yellow-500 transition">CFD Explaination</Link>
-          <Link href="#contactus" className="hover:text-yellow-500 transition">Contact Us</Link>
+          <Link href="#about" className="hover:text-yellow-500 transition">
+            À propos
+          </Link>
+          <Link
+            href="#tradingoffers"
+            className="hover:text-yellow-500 transition"
+          >
+            Offres de Trading
+          </Link>
+          <Link
+            href="#opportunities"
+            className="hover:text-yellow-500 transition"
+          >
+            Opportunités
+          </Link>
+          <Link href="#deposit" className="hover:text-yellow-500 transition">
+            Dépôt
+          </Link>
+          <Link
+            href="#cfdexplaination"
+            className="hover:text-yellow-500 transition"
+          >
+            Explication CFD
+          </Link>
+          <Link href="#contactus" className="hover:text-yellow-500 transition">
+            Nous contacter
+          </Link>
 
           {/* Auth Buttons */}
           <div className="pt-4 flex flex-col gap-3">
             <Link href="/login">
               <button className="w-full rounded-full px-4 sm:px-6 py-3 text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-gradient-to-br from-white/70 via-yellow-500 to-black/20 hover:text-yellow-500 hover:bg-black hover:scale-105 transition-all duration-300">
-                Login
+                Se connecter
               </button>
             </Link>
             <Link href="/signup">
               <button className="w-full rounded-full px-4 sm:px-6 py-3 text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-gradient-to-br from-white/70 via-yellow-500 to-black/20 hover:text-yellow-500 hover:bg-black hover:scale-105 transition-all duration-300">
-                Sign Up
+                S'inscrire
               </button>
             </Link>
           </div>

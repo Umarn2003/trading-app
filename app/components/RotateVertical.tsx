@@ -4,8 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface RotateVerticalProps {
   children: React.ReactNode;
-  duration?: number; 
-  delay?: number; 
+  duration?: number;
+  delay?: number;
   className?: string;
 }
 

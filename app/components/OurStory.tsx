@@ -60,7 +60,7 @@ export default function OurStory() {
       colorTheme: "light",
       dateRange: "12M",
       showChart: false,
-      locale: "en",
+      locale: "fr",
       width: "100%",
       height: 420,
       showSymbolLogo: true,
@@ -111,7 +111,7 @@ export default function OurStory() {
                 : "opacity-0 -translate-y-10 blur-sm"
             }`}
           >
-            Our Story
+            Notre Histoire
           </h2>
           {/* Decorative underline */}
           <div
@@ -145,7 +145,7 @@ export default function OurStory() {
               }`}
               style={{ transitionDelay: "400ms" }}
             >
-              Trade Cryptocurrencies with Leverage
+              Tradez les Cryptomonnaies avec Levier
             </h2>
             <p
               className={`text-white/80 -rotate-10 mb-14 ml-3 transition-all duration-700 ${
@@ -155,8 +155,9 @@ export default function OurStory() {
               }`}
               style={{ transitionDelay: "500ms" }}
             >
-              Trade cryptocurrencies with up to 1:150 leverage. You can start
-              with as little as $100 to gain the effect of $15,000 capital!
+              Tradez les cryptomonnaies avec un levier allant jusqu'à 1:150.
+              Vous pouvez commencer avec seulement 100 $ pour obtenir l'effet
+              d'un capital de 15 000 $ !
             </p>
             <button
               className={`bg-black ml-6 -rotate-10 text-white px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition-all hover:bg-transparent hover:text-yellow-100/50 hover:shadow-yellow-500/50 hover:shadow-lg ${
@@ -166,7 +167,7 @@ export default function OurStory() {
               }`}
               style={{ transitionDelay: "600ms" }}
             >
-              Contact Us
+              Nous Contacter
             </button>
           </div>
         </div>

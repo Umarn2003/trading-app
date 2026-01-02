@@ -1,6 +1,6 @@
-"use client"
-import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+"use client";
+import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 interface FAQItem {
   id: number;
@@ -9,51 +9,58 @@ interface FAQItem {
   answer: string;
 }
 
-export const FAQForTrading:React.FC=()=> {
+export const FAQForTrading: React.FC = () => {
   const [openItem, setOpenItem] = useState<number | null>(null);
 
   const faqItems: FAQItem[] = [
     {
       id: 1,
-      number: '01',
-      question: 'What is Trade002?',
-      answer: ' Trade001 is a secure and user-friendly CFD trading platform providing access to Forex, Crypto, Indices, ETFs. It is designed for both beginner and professional traders..'
+      number: "01",
+      question: "Qu'est-ce que Trade002 ?",
+      answer:
+        "Trade001 est une plateforme de trading CFD sécurisée et conviviale offrant un accès au Forex, Crypto, Indices, ETFs. Elle est conçue pour les traders débutants et professionnels.",
     },
     {
       id: 2,
-      number: '02',
-      question: 'What are CFDs?',
-      answer: 'A CFD, or Contract for Difference, is a financial agreement allowing traders to profit from price movements of an asset without owning it. Traders can go long or short depending on market direction..'
+      number: "02",
+      question: "Qu'est-ce que les CFD ?",
+      answer:
+        "Un CFD, ou Contrat sur Différence, est un accord financier permettant aux traders de profiter des mouvements de prix d'un actif sans le posséder. Les traders peuvent aller long ou short selon la direction du marché.",
     },
     {
       id: 3,
-      number: '03',
-      question: 'How can AI help a business?',
-      answer: 'AI helps businesses by automating routine tasks, providing data-driven insights for better decision-making, personalizing customer experiences, improving operational efficiency, reducing costs, predicting market trends, enhancing product recommendations, optimizing supply chains, detecting fraud, and enabling 24/7 customer support through chatbots and virtual assistants.'
+      number: "03",
+      question: "Comment l'IA peut-elle aider une entreprise ?",
+      answer:
+        "L'IA aide les entreprises en automatisant les tâches routinières, en fournissant des insights basés sur les données pour une meilleure prise de décision, en personnalisant les expériences client, en améliorant l'efficacité opérationnelle, en réduisant les coûts, en prédisant les tendances du marché, en améliorant les recommandations de produits, en optimisant les chaînes d'approvisionnement, en détectant la fraude, et en permettant un support client 24/7 via des chatbots et des assistants virtuels.",
     },
     {
       id: 4,
-      number: '04',
-      question: 'Is Trade002 Secure and Safe?',
-      answer: 'Yes, Trade001 uses advanced security protocols to protect your funds and personal data while providing a reliable trading environment..'
+      number: "04",
+      question: "Trade002 est-il sécurisé et sûr ?",
+      answer:
+        "Oui, Trade001 utilise des protocoles de sécurité avancés pour protéger vos fonds et vos données personnelles tout en offrant un environnement de trading fiable.",
     },
     {
       id: 5,
-      number: '05',
-      question: 'Which Markets can i trade on 002?',
-      answer: 'You can trade Forex, Crypto, Indices, ETFs from a single, easy to use platform.'
+      number: "05",
+      question: "Quels marchés puis-je trader sur 002 ?",
+      answer:
+        "Vous pouvez trader du Forex, Crypto, Indices, ETFs depuis une plateforme unique et facile à utiliser.",
     },
     {
       id: 6,
-      number: '06',
-      question: 'Does trade002 offers Trade Execution?',
-      answer: 'Trade001 ensures lightning fast execution so you can capture market opportunities without delay.'
+      number: "06",
+      question: "Trade002 offre-t-il l'exécution des trades ?",
+      answer:
+        "Trade001 garantit une exécution ultra-rapide pour que vous puissiez saisir les opportunités du marché sans délai.",
     },
-     {
+    {
       id: 7,
-      number: '07',
-      question: 'Can Begineers Tradeon002?',
-      answer: 'Absolutely. The platform is designed for traders of all experience levels, with educational resources and 24/7 expert support.'
+      number: "07",
+      question: "Les débutants peuvent-ils trader sur 002 ?",
+      answer:
+        "Absolument. La plateforme est conçue pour les traders de tous niveaux d'expérience, avec des ressources éducatives et un support expert 24/7.",
     },
   ];
 
@@ -77,17 +84,13 @@ export const FAQForTrading:React.FC=()=> {
             </div>
           </div>
           <h2 className="text-2xl md:text-5xl bg-linear-to-br from-white/70 font-semibold via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
-            
-            FAQs About Trading
+            FAQ sur le Trading
           </h2>
         </div>
 
         <div className="space-y-4">
           {faqItems.map((item) => (
-            <div
-              key={item.id}
-              className="border-b border-yellow-500 pb-4"
-            >
+            <div key={item.id} className="border-b border-yellow-500 pb-4">
               <button
                 onClick={() => toggleItem(item.id)}
                 className="w-full flex items-start justify-between py-4 text-left hover:opacity-70 transition group hover:cursor-pointer"
@@ -102,16 +105,14 @@ export const FAQForTrading:React.FC=()=> {
                 </div>
                 <ChevronDown
                   className={`w-6 h-6 text-yellow-400 transition-transform shrink-0 ml-4 group-hover:-translate-x-2 duration-400 ${
-                    openItem === item.id ? 'transform rotate-180' : ''
+                    openItem === item.id ? "transform rotate-180" : ""
                   }`}
                 />
               </button>
-              
+
               {openItem === item.id && (
                 <div className="ml-12 mt-2 pr-10">
-                  <p className="text-white/70 leading-relaxed">
-                    {item.answer}
-                  </p>
+                  <p className="text-white/70 leading-relaxed">{item.answer}</p>
                 </div>
               )}
             </div>
@@ -120,4 +121,4 @@ export const FAQForTrading:React.FC=()=> {
       </div>
     </div>
   );
-}
+};

@@ -48,7 +48,7 @@ export default function TradingOfferLayered() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black py-32 px-6 flex flex-col items-center overflow-hidden gap-10"
+      className="relative bg-black py-16 px-6 flex flex-col items-center overflow-hidden gap-10"
     >
       {/* Heading slides from left */}
       <div
@@ -57,12 +57,12 @@ export default function TradingOfferLayered() {
         }`}
       >
         <h2 className="text-2xl md:text-5xl bg-linear-to-br from-white/70 font-semibold via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
-          Trading Offers
+          Offres de Trading
         </h2>
         <div className="h-1 w-40 bg-linear-to-r from-yellow-500 via-white/70 to-yellow-500 mb-6 mx-auto" />
         <p className="text-white/70 text-lg leading-relaxed">
-          Hover over the offer to explore our premium trading opportunities
-          across Forex, Crypto, Indices, and ETFs.
+          Survolez l'offre pour explorer nos opportunités de trading premium
+          dans le Forex, Crypto, Indices et ETFs.
         </p>
       </div>
 
@@ -84,7 +84,7 @@ export default function TradingOfferLayered() {
         <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl hover:scale-105  transition-transform duration-500">
           <img
             src="https://pink-mallard-727286.hostingersite.com/wp-content/uploads/2025/12/transparent-table-png.png"
-            alt="Trading offers"
+            alt="Offres de trading"
             className="w-full h-full object-contain"
           />
         </div>

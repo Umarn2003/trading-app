@@ -7,22 +7,24 @@ const icons = [FileText, ShieldCheck, BarChart3, TrendingUp];
 
 const steps = [
   {
-    title: "Enter Personal Details",
+    title: "Saisir les Détails Personnels",
     description:
-      "Fill in your personal details in our secure online application. It only takes a few minutes.",
+      "Remplissez vos détails personnels dans notre application en ligne sécurisée. Cela ne prend que quelques minutes.",
   },
   {
-    title: "Verify Your Identity",
+    title: "Vérifier Votre Identité",
     description:
-      "Confirm your identity electronically or by submitting ID documents.",
+      "Confirmez votre identité électroniquement ou en soumettant des documents d'identification.",
   },
   {
-    title: "Fund Your Account",
-    description: "Deposit funds securely using multiple payment options.",
+    title: "Financer Votre Compte",
+    description:
+      "Déposez des fonds en toute sécurité en utilisant plusieurs options de paiement.",
   },
   {
-    title: "Start Trading",
-    description: "Access global markets and start trading instantly.",
+    title: "Commencer à Trader",
+    description:
+      "Accédez aux marchés mondiaux et commencez à trader instantanément.",
   },
 ];
 
@@ -51,10 +53,11 @@ export default function Timeline() {
 
         <div className="text-center max-w-3xl mx-auto mb-28">
           <h2 className="text-2xl md:text-5xl bg-linear-to-br from-white/70 font-semibold via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
-            CFD Explution
+            Explication CFD
           </h2>
           <p className="text-white/70 text-lg">
-            Follow a simple onboarding process and start trading quickly.
+            Suivez un processus d'intégration simple et commencez à trader
+            rapidement.
           </p>
         </div>
 
