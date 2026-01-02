@@ -94,17 +94,25 @@ export const Oppurtunities: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="mb-16 text-center">
-          <p className="text-4xl font-bold bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
+          <p className="text-2xl md:text-5xl font-bold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
             Our Opportunities
           </p>
-          <h2 className="text-3xl text-white/70">
+          <h2 className="text-lg text-white/70">
             Leading CFD & Forex Broker for Professional Traders
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="flex gap-12 items-start justify-center flex-col">
+          <div className="relative h-[60vh]">
+            <img
+              src="/cfd copy.png"
+              alt="forex trading pic"
+              className="relative w-full h-full object-cover rounded-lg shadow-lg animate-image-slide"
+            />
+            <div className="" />
+          </div>
           {/* LEFT LIST */}
-          <div className="space-y-10">
+          <div className="space-y-10 p-5 absolute w-1/3 ">
             {services.map((service, i) => {
               const isVisible = visibleItems.includes(i);
 
@@ -131,11 +139,11 @@ export const Oppurtunities: React.FC = () => {
                   <div className="flex justify-between mb-4">
                     <div className="flex gap-4">
                       <span className="text-white/80">{service.number}</span>
-                      <h3 className="text-xl font-semibold bg-gradient-to-br from-white/70 via-yellow-500 to-black/10 text-transparent bg-clip-text">
+                      <h3 className="text-xl font-semibold text-yellow-400/85">
                         {service.title}
                       </h3>
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-yellow-400 opacity-0 group-hover:opacity-100 transition" />
+                    <ArrowUpRight className="w-5 h-5 text-yellow-400 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition" />
                   </div>
 
                   <div
@@ -151,21 +159,6 @@ export const Oppurtunities: React.FC = () => {
                 </div>
               );
             })}
-          </div>
-
-          {/* RIGHT IMAGE – RE-ANIMATES ON EVERY CHANGE */}
-          <div className="sticky top-24">
-            <div
-              key={selectedImage}
-              className="relative h-[470px] rounded-xl overflow-hidden animate-image-slide"
-            >
-              <img
-                src={selectedImage}
-                alt="Opportunity"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/10" />
-            </div>
           </div>
         </div>
       </div>

@@ -110,7 +110,7 @@ export default function Animations() {
       {!showHero && (
         <canvas
           ref={canvasRef}
-          className="fixed inset-0 w-full h-full z-[9999] bg-black"
+          className="fixed inset-0 w-full h-full z-9999 bg-black"
         />
       )}
 

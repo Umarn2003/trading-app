@@ -118,7 +118,7 @@ export default function TakeControlSection() {
           active ? "active" : ""
         }`}
       >
-        <h2 className="text-4xl lg:text-5xl font-semibold mb-20 bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+        <h2 className="text-2xl md:text-5xl font-semibold mb-20 bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
           Take control of your funds
         </h2>
 
@@ -129,9 +129,9 @@ export default function TakeControlSection() {
               <div
                 key={item.id}
                 style={{ transitionDelay: `${index * 180}ms` }}
-                className={`relative magnetic-item ${
-                  active ? "active" : ""
-                } ${index === 1 ? "lg:pl-12" : ""}`}
+                className={`relative magnetic-item ${active ? "active" : ""} ${
+                  index === 1 ? "lg:pl-12" : ""
+                }`}
               >
                 {index === 1 && (
                   <div className="absolute left-0 top-0 h-full w-px bg-white/30">
@@ -145,7 +145,7 @@ export default function TakeControlSection() {
 
                 <Icon className="w-10 h-10 mb-6 text-white" />
 
-                <h3 className="text-lg font-semibold leading-snug mb-3 max-w-xs bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+                <h3 className="text-lg font-semibold leading-snug mb-3 max-w-xs text-yellow-400/85">
                   {item.title}
                 </h3>
 
@@ -187,9 +187,8 @@ export default function TakeControlSection() {
         <div className="my-16 h-px bg-white/40" />
 
         <button
-          className={`rounded-full cursor-pointer bg-linear-to-br from-white/70 via-yellow-500 to-black/50
-          text-white bg-clip-text px-10 py-4 text-base font-semibold
-          shadow-[0_0_18px_rgba(234,179,8,0.45)] transition cta-lock ${
+          className={`rounded-full cursor-pointer hover:text-black border border-yellow-500 hover:border-white hover:bg-yellow-500 bg-transparent transition-all duration-300
+          text-white px-8 py-3 text-base font-semibold ${
             active ? "active" : ""
           }`}
         >

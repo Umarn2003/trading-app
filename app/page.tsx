@@ -4,23 +4,13 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import BenefitsSection from "./components/Cfdally";
 import TradingOffers from "./components/Tradingoffers";
-import { ShieldCheck, Zap, Globe, Headphones } from "lucide-react";
 import { Oppurtunities } from "./components/Oppurtunities";
 import DepositSection from "./components/DepositSection";
 import DesignProcessSection from "./components/Advantages";
-import WhyChooseUs from "./components/DepositSection";
 import { FAQForTrading } from "./components/FAQ";
 import { ContactForm } from "./components/ContactForm";
-import Footer from "./components/Footer";
 import Home from "./components/Cfdexplution";
-import Link from "next/link";
-import Hero from "./components/Hero";
 import OurStory from "./components/OurStory";
-import BouncingShape from "./components/Bouncing";
-import AnimatedSection from "./components/AnimatedSection";
-import AuroraLift from "./components/FadeSlideIn";
-import UltimateReveal from "./components/FadeSlideIn";
-import RightBlurReveal from "./components/FadeSlideIn";
 import Animations from "./components/FadeSlideIn";
 import FadeSlideInn from "./components/FadeSlideInn";
 
@@ -83,39 +73,40 @@ export default function HeroSection() {
 
   return (
     <div className="bg-black">
-    
-      <Animations>
-        
-      </Animations>
+      <Animations></Animations>
 
-
-         <FadeSlideInn>
+      <FadeSlideInn>
         <div id="about">
-          <OurStory/>
+          <OurStory />
         </div>
-       </FadeSlideInn>
+      </FadeSlideInn>
 
-         <FadeSlideInn>
+      <FadeSlideInn>
         <div id="trading">
           <BenefitsSection />
         </div>
-        </FadeSlideInn>
+      </FadeSlideInn>
 
-
-      <FadeSlideInn> 
+      <FadeSlideInn>
         <div id="opportunities">
-          <Oppurtunities/>
+          <Oppurtunities />
         </div>
-        </FadeSlideInn>
+      </FadeSlideInn>
 
-
-<FadeSlideInn> 
+      <FadeSlideInn>
         <div id="tradingoffers">
           <TradingOffers />
         </div>
-</FadeSlideInn>
+      </FadeSlideInn>
 
-<FadeSlideInn>
+      
+      <FadeSlideInn>
+        <div id="cfdexplaination">
+          <DesignProcessSection />
+        </div>
+      </FadeSlideInn>
+
+      <FadeSlideInn>
         <section className="relative bg-black overflow-hidden py-32 px-6 md:px-10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
             <div
@@ -132,26 +123,20 @@ export default function HeroSection() {
                 }}
               >
                 <Image
-                  src="/tradingplatform.png"
+                  src="/forex copy.png"
                   alt="Why Choose Us"
                   fill
                   className="object-cover rounded-3xl"
                 />
                 <div className="absolute inset-0 bg-linear-to-tr from-black/60 via-transparent to-black/30 rounded-3xl animate-gradient-x"></div>
               </div>
-
-              <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-yellow-400/20 animate-pulse"></div>
-              <div className="absolute bottom-10 right-8 w-16 h-16 rounded-full bg-blue-500/20 animate-pulse"></div>
-              <div className="absolute top-1/2 left-1/4 w-8 h-8 rounded-full bg-red-400/20 animate-pulse"></div>
             </div>
 
             <div className="relative bg-linear-to-br from-gray-900/60 via-black/40 to-black/70 p-8 rounded-2xl shadow-2xl flex flex-col justify-center space-y-8">
-              <h3 className="bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text text-sm font-semibold uppercase tracking-wide">
+              <h3 className="bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text text-sm font-semibold uppercase tracking-wide">
                 Why Choose Us
               </h3>
-              <h2
-                className="text-4xl md:text-5xl font-bold leading-snug drop-shadow-lg bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text"
-              >
+              <h2 className="text-2xl md:text-5xl font-bold leading-snug drop-shadow-lg bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
                 Experience Ultra-Premium CFD Trading
               </h2>
               <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-md drop-shadow-md">
@@ -182,35 +167,30 @@ export default function HeroSection() {
 
           <div className="absolute inset-0 'bg-[radial-gradient(circle,_rgba(255,255,255,0.02)_1px,_transparent_1px)]' bg-size-60px_60px pointer-events-none animate-pulse"></div>
         </section>
-        </FadeSlideInn>
-<FadeSlideInn>
+      </FadeSlideInn>
+      <FadeSlideInn>
         <div id="deposit">
           <DepositSection />
         </div>
       </FadeSlideInn>
 
       <FadeSlideInn>
-      <div>
-        <Home/>
-      </div>
-      </FadeSlideInn>
-      <FadeSlideInn>
-        <div id="cfdexplaination">
-          <DesignProcessSection />
+        <div>
+          <Home />
         </div>
-        </FadeSlideInn>
+      </FadeSlideInn>
 
-        <FadeSlideInn>
+      <FadeSlideInn>
         <div>
           <FAQForTrading />
         </div>
-        </FadeSlideInn>
+      </FadeSlideInn>
 
-        <FadeSlideInn>
+      <FadeSlideInn>
         <div id="contactus">
           <ContactForm />
         </div>
-        </FadeSlideInn>
+      </FadeSlideInn>
     </div>
   );
 }

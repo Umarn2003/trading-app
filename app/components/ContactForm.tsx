@@ -28,10 +28,10 @@ export const ContactForm = () => {
       <div className="md:w-2/5 p-10 md:p-16 text-white flex flex-col justify-center relative overflow-hidden">
         <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full blur-3xl" />
 
-        <h1 className="md:text-4xl text-2xl font-bold mb-4 leading-tight ">
+        <h2 className="md:text-4xl text-2xl font-bold mb-4 leading-tight ">
           Trade With Confidence. <br />
-          <span className="bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">Speak to Market Experts of Trade002.</span>
-        </h1>
+          <span className="bg-linear-to-br from-white/70 via-yellow-500 to-white/20 text-transparent bg-clip-text">Speak to Market Experts of Trade002.</span>
+        </h2>
 
         <p className="md:text-lg text-sm mb-10 text-slate-300 max-w-md">
           Whether you trade crypto, forex, or stocks — our experts help you
@@ -40,15 +40,15 @@ export const ContactForm = () => {
 
         <div className="grid grid-cols-3 gap-6 mb-10">
           <div>
-            <h3 className="text-2xl font-bold text-yellow-400">12K+</h3>
+            <h3 className="text-2xl font-bold text-yellow-400/85">12K+</h3>
             <p className="text-xs text-white/50">Global Traders</p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-yellow-400">99.9%</h3>
+            <h3 className="text-2xl font-bold text-yellow-400/85">99.9%</h3>
             <p className="text-xs text-white/50">Execution Uptime</p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-yellow-400">24/7</h3>
+            <h3 className="text-2xl font-bold text-yellow-400/85">24/7</h3>
             <p className="text-xs text-white/50">Market Coverage</p>
           </div>
         </div>
@@ -72,7 +72,7 @@ export const ContactForm = () => {
             { icon: <CheckCircle />, text: "Onboarding begins instantly." },
           ].map((item, i) => (
             <div key={i} className="flex gap-4">
-              <div className="text-yellow-400 mt-1">{item.icon}</div>
+              <div className="text-yellow-400/85 mt-1">{item.icon}</div>
               <p>{item.text}</p>
             </div>
           ))}
@@ -92,14 +92,14 @@ export const ContactForm = () => {
             <input
               type="text"
               placeholder="Full Name"
-              className="input placeholder:text-slate-500 text-white"
+              className="input placeholder:text-slate-500 text-white px-2 py-1 rounded-3xl"
               required
             />
             <input
               type="email"
               placeholder="Email Address"
               required
-              className="input placeholder:text-slate-500 text-white"
+              className="input placeholder:text-slate-500 text-white px-2 py-1 rounded-3xl"
             />
           </div>
 
@@ -107,9 +107,9 @@ export const ContactForm = () => {
             <input
               type="tel"
               placeholder="Phone Number"
-              className="input placeholder:text-slate-500 text-white"
+              className="input placeholder:text-slate-500 text-white px-2 py-1 rounded-3xl"
             />
-            <select className="input bg-transparent text-white">
+            <select className="input bg-transparent text-white px-2 py-1 rounded-3xl">
               <option value=" disabled selected hidden">
                 Trading Type
               </option>
@@ -124,13 +124,13 @@ export const ContactForm = () => {
             rows={3}
             cols={70}
             placeholder="Tell us about your trading goals..."
-            className="input resize-none mb-6 placeholder:text-slate-500"
+            className="input resize-none mb-6 placeholder:text-slate-500 px-2 py-1 rounded-xl text-white "
           />
-          <Link href="/signup">
+          <Link href="/">
           <button
             type="submit"
             disabled={loading}
-            className="w-60 bg-yellow-500 text-black  hover:bg-black transition-all hover:text-white/70 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
+            className="w-60 bg-yellow-400/85 text-black  hover:bg-transparent hover:outline outline-yellow-500 transition-colors duration-300 hover:cursor-pointer hover:text-white/70 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
           >
             {loading ? "Submitting..." : "Contact Us"}
             <Send className="w-4 h-4" />

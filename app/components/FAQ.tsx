@@ -76,11 +76,9 @@ export const FAQForTrading:React.FC=()=> {
               </div>
             </div>
           </div>
-          <h2 className="text-3xl text-white/90 md:text-4xl font-semibold leading-tight">
-            FAQs About{" "}
-            <span className="bg-linear-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-              Trading
-            </span>
+          <h2 className="text-2xl md:text-5xl bg-linear-to-br from-white/70 font-semibold via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
+            
+            FAQs About Trading
           </h2>
         </div>
 
@@ -92,7 +90,7 @@ export const FAQForTrading:React.FC=()=> {
             >
               <button
                 onClick={() => toggleItem(item.id)}
-                className="w-full flex items-start justify-between py-4 text-left hover:opacity-70 transition group"
+                className="w-full flex items-start justify-between py-4 text-left hover:opacity-70 transition group hover:cursor-pointer"
               >
                 <div className="flex items-start gap-4 flex-1">
                   <span className="text-yellow-400 font-semibold text-lg">

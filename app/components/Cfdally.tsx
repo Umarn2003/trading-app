@@ -70,16 +70,16 @@ export default function BenefitsSection() {
 
   return (
     <section className="relative bg-black py-32">
-      <h1 className="text-7xl text-center mb-16 bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+      <h2 className="text-2xl md:text-5xl text-center mb-16 bg-linear-to-br font-semibold from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
         Your CFD ALLY
-      </h1>
+      </h2>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
         {/* LEFT CONTENT */}
         <div className="lg:col-span-1">
-          <h2 className="text-5xl font-bold bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text leading-tight mb-6">
+          <h3 className="text-xl md:text-4xl font-bold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text leading-tight mb-6">
             Key <br /> Highlights
-          </h2>
+          </h3>
 
           <p className="text-white/70 mb-10 max-w-sm">
             Power up your trading success with FundedNext & get maximum reward.
@@ -114,10 +114,10 @@ export default function BenefitsSection() {
               >
                 <div
                   className="w-14 h-14 rounded-xl mb-6 flex items-center justify-center
-                  bg-gradient-to-br from-black/60 to-black/20
+                  bg-linear-to-br from-black/60 to-black/20
                   shadow-[0_0_30px_rgba(234,179,8,0.35)]"
                 >
-                  <Icon className="w-8 h-8 text-yellow-500" />
+                  <Icon className="w-8 h-8 text-white" />
                 </div>
 
                 <h3 className="text-xl font-semibold mb-3 bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">

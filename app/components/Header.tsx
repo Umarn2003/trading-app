@@ -29,14 +29,14 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Auth Buttons */}
-          <div className="hidden md:flex items-center gap-2 sm:gap-3">
+          <div className="hidden md:flex items-center gap-2 sm:gap-3 just">
             <Link href="/login">
-              <button className="rounded-full px-4 sm:px-6 py-1 text-sm sm:text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-gradient-to-br from-white/70 via-yellow-500 to-black/20 hover:text-yellow-500 hover:bg-black hover:scale-105 transition-all duration-300">
+              <button className="rounded-full px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-black shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-linear-to-br from-black/5 via-yellow-500 to-black/5 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
                 Login
               </button>
             </Link>
             <Link href="/signup">
-              <button className="rounded-full px-4 sm:px-6 py-1 text-sm sm:text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-gradient-to-br from-white/70 via-yellow-500 to-black/20 hover:text-yellow-500 hover:bg-black hover:scale-105 transition-all duration-300">
+              <button className="rounded-full px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] hover:bg-linear-to-br from-white/70 via-yellow-500 to-black/20 hover:text-black hover:bg-black hover:scale-105 transition-all duration-300 hover:cursor-pointer">
                 Sign Up
               </button>
             </Link>

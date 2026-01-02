@@ -8,7 +8,7 @@ export default function Hero() {
         src="/bg.png"
         alt="Lightning Background"
         fill
-        className="object-cover opacity-50"
+        className="object-cover opacity-30"
       />
 
       {/* Content */}
@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Side */}
           <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold leading-[1.15] tracking-tight text-white mt-55">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight text-white mt-55">
               Markets move fast.
               <br />
               So can you.
@@ -27,10 +27,10 @@ export default function Hero() {
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
-              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-14 py-3 font-semibold shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:bg-black hover:text-white/70 transition duration-300">
+              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-14 py-3 font-semibold shadow-[0_0_20px_rgba(59,130,246,0.6)] shadow-amber-100 hover:bg-transparent hover:text-white transition duration-300 hover:cursor-pointer hover:border-yellow-500">
                 Start trading
               </button>
-              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-12 py-3 font-semibold shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:bg-black hover:text-white/70 transition duration-300">
+              <button className="w-full sm:w-auto rounded-2xl bg-yellow-500 px-8 sm:px-12 py-3 font-semibold shadow-amber-100 hover:bg-transparent  hover:text-white/70 hover:border-yellow-500 hover:cursor-pointer transition duration-300">
                 Try free demo
               </button>
             </div>
@@ -41,28 +41,24 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-8 text-sm sm:text-base text-white/80 mt-25 sm:mt-16">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4">
-            <p className="text-sm sm:text-xl font-bold text-white">32 Million+</p>
-            <p>Registered customers</p>
+        <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-8 text-sm md:text-lg text-white/80 mt-25 sm:mt-16">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4 gap-2">
+            <p className="font-bold text-white">32 Million +</p>
+            <p className="text-white/50">Registered customers</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4">
-            <p className="text-lg sm:text-xl font-bold text-white">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4 gap-2">
+            <p className="font-bold text-white">
               <span className="text-green-500">★ </span>4.2
             </p>
-            <p>Trustpilot rating</p>
+            <p className="text-white/50">Trustpilot rating</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/70 pr-0 sm:pr-4">
-            <p className="font-semibold text-white">London Stock Exchange</p>
-            <p>Listed since 2013</p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center sm:pr-4 gap-2">
+            <p className="font-semibold text-white">Paris Stock Exchange</p>
+            <p className="text-white/50">Listed since 2013</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center">
-            <p className="font-semibold text-white">Chicago Bulls</p>
-            <p>Official partner</p>
-          </div>
         </div>
       </div>
     </section>
