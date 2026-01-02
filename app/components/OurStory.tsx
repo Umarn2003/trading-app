@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 // Scroll Animation Hook (included in this file)
 const useScrollAnimation = (
-  ref: React.RefObject<HTMLElement>,
+  ref: React.RefObject<HTMLElement | null>,
   options: {
     threshold?: number;
     rootMargin?: string;
@@ -45,7 +45,7 @@ const useScrollAnimation = (
 };
 
 export default function OurStory() {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const isVisible = useScrollAnimation(sectionRef);
 

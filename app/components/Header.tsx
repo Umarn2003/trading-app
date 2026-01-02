@@ -116,12 +116,12 @@ export default function Navbar() {
           {/* Auth Buttons */}
           <div className="pt-4 flex flex-col gap-3">
             <Link href="/login">
-              <button className="w-full rounded-full px-4 sm:px-6 py-3 text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-gradient-to-br from-white/70 via-yellow-500 to-black/20 hover:text-yellow-500 hover:bg-black hover:scale-105 transition-all duration-300">
+              <button className="w-full rounded-full px-4 sm:px-6 py-3 text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-linear-to-br from-white/70 via-yellow-500 to-black/20 hover:text-yellow-500 hover:bg-black hover:scale-105 transition-all duration-300">
                 Se connecter
               </button>
             </Link>
             <Link href="/signup">
-              <button className="w-full rounded-full px-4 sm:px-6 py-3 text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-gradient-to-br from-white/70 via-yellow-500 to-black/20 hover:text-yellow-500 hover:bg-black hover:scale-105 transition-all duration-300">
+              <button className="w-full rounded-full px-4 sm:px-6 py-3 text-base font-semibold text-white shadow-[0_0_18px_rgba(234,179,8,0.45)] bg-linear-to-br from-white/70 via-yellow-500 to-black/20 hover:text-yellow-500 hover:bg-black hover:scale-105 transition-all duration-300">
                 S'inscrire
               </button>
             </Link>

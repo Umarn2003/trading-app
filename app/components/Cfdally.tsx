@@ -44,7 +44,7 @@ export default function BenefitsSection() {
     },
   ];
 
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const cardsRef = useRef<(HTMLDivElement | null)[]>(new Array(benefits.length).fill(null));
   const [visibleCards, setVisibleCards] = useState<number[]>([]);
 
   useEffect(() => {
@@ -121,7 +121,7 @@ export default function BenefitsSection() {
                   <Icon className="w-8 h-8 text-white" />
                 </div>
 
-                <h3 className="text-xl font-semibold mb-3 bg-gradient-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+                <h3 className="text-xl font-semibold mb-3 bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
                   {item.title}
                 </h3>
 
