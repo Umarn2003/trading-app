@@ -103,7 +103,7 @@ export default function BenefitsSection() {
             return (
               <div
                 key={i}
-                ref={(el) => (cardsRef.current[i] = el)}
+                ref={(el) => { cardsRef.current[i] = el; }}
                 data-index={i}
                 style={{ transitionDelay: `${i * 120}ms` }}
                 className={`transform transition-all duration-700 ease-out

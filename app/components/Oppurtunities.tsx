@@ -119,7 +119,7 @@ export const Oppurtunities: React.FC = () => {
               return (
                 <div
                   key={service.id}
-                  ref={(el) => (itemsRef.current[i] = el)}
+                  ref={(el) => {itemsRef.current[i] = el;}}
                   style={{ transitionDelay: `${i * 120}ms` }}
                   className={`border-t border-yellow-500 pt-6 cursor-pointer group
                     transition-all duration-700 ease-out transform
