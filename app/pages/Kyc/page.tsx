@@ -1,9 +1,9 @@
 "use client";
 export default function KYCPage() {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-16">
+    <main className="min-h-screen bg-[#04043d]  text-white px-6 py-16">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-6 text-yellow-400">
+        <h1 className="text-4xl font-bold mb-6 mt-20 text-white/80">
           KYC Policy
         </h1>
 
@@ -15,7 +15,7 @@ export default function KYCPage() {
 
         {/* Section 1 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             1. Customer Identification
           </h2>
 
@@ -52,7 +52,7 @@ export default function KYCPage() {
 
         {/* Section 2 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             2. Customer Acceptance Criteria
           </h2>
 
@@ -85,7 +85,7 @@ export default function KYCPage() {
 
         {/* Section 3 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             3. Ongoing Monitoring and Compliance
           </h2>
 
@@ -108,7 +108,7 @@ export default function KYCPage() {
 
         {/* Section 4 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             4. Third-Party Verification
           </h2>
 
@@ -120,7 +120,7 @@ export default function KYCPage() {
         </section>
 
         <div className="border-t border-white/10 pt-6">
-          <h3 className="text-xl font-semibold mb-2 text-yellow-400">
+          <h3 className="text-xl font-semibold mb-2 text-blue-800">
             Transparency & Security at Trade001
           </h3>
 

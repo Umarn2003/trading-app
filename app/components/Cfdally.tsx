@@ -69,15 +69,15 @@ export default function BenefitsSection() {
   }, []);
 
   return (
-    <section className="relative bg-black py-32">
-      <h2 className="text-2xl md:text-5xl text-center mb-16 bg-linear-to-br font-semibold from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+    <section className="relative bg-[#07071b] py-32">
+      <h2 className="text-2xl md:text-5xl text-center mb-16 font-semibold bg-clip-text text-transparent bg-white">
         Votre ALLIÉ CFD
       </h2>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
         {/* LEFT CONTENT */}
         <div className="lg:col-span-1">
-          <h3 className="text-xl md:text-4xl font-bold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text leading-tight mb-6">
+          <h3 className="text-xl md:text-4xl font-bold bg-clip-text text-transparent bg-white/80 leading-tight mb-6">
             Points <br /> Clés
           </h3>
 
@@ -107,21 +107,17 @@ export default function BenefitsSection() {
                 data-index={i}
                 style={{ transitionDelay: `${i * 120}ms` }}
                 className={`transform transition-all duration-700 ease-out
-                  ${
-                    isVisible
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-14"
-                  }`}
+                  ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-14"}`}
               >
                 <div
                   className="w-14 h-14 rounded-xl mb-6 flex items-center justify-center
-                  bg-linear-to-br from-black/60 to-black/20
-                  shadow-[0_0_30px_rgba(234,179,8,0.35)]"
+                  bg-blue-500/30
+                  shadow-[0_0_30px_rgba(59,130,246,0.35)]"
                 >
                   <Icon className="w-8 h-8 text-white" />
                 </div>
 
-                <h3 className="text-xl font-semibold mb-3 bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+                <h3 className="text-xl font-semibold mb-3 bg-clip-text text-transparent bg-blue-500">
                   {item.title}
                 </h3>
 

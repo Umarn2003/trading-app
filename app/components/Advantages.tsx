@@ -59,28 +59,23 @@ export default function DesignProcessSection() {
   const duplicatedCards = [...cards, ...cards];
 
   return (
-    <section className="bg-black text-white py-16 overflow-hidden">
+    <section className="bg-[#07071b] text-white py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto ">
-          <h2 className="text-2xl md:text-5xl font-semibold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-5xl font-semibold bg-clip-text text-transparent text-white/80">
             Avantages du Trading CFD
           </h2>
-          <p className="text-white/60 mt-4 md:text-lg text-sm">
+          <p className="text-blue-500 mt-4 md:text-lg text-sm">
             Fonctionnalités puissantes conçues pour les traders modernes.
           </p>
         </div>
 
         <div className="mt-16 overflow-hidden relative">
-          <div
-            className="pointer-events-none absolute inset-y-0 left-0 w-24 
-    bg-linear-to-r from-black via-black/70 to-transparent z-10"
-          />
+         {/* Left Fade */}
+<div className="pointer-events-none absolute inset-y-0 left-0 w-17 bg-gradient-to-r from-[#07071b]  via-[#061524]/70 to-transparent z-10" />
 
-          <div
-            className="pointer-events-none absolute inset-y-0 right-0 w-24 
-    bg-linear-to-l from-black via-black/80 to-transparent z-10"
-          />
-
+{/* Right Fade */}
+<div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#07071b]  via-[#061524]/70 to-transparent z-10" />
           <motion.div
             className="flex gap-10 w-max"
             animate={{ x: ["0%", "-50%"] }}
@@ -94,17 +89,17 @@ export default function DesignProcessSection() {
               <div
                 key={index}
                 className="
-          min-w-[320px] md:w-120 rounded-2xl p-8
-          bg-linear-to-br from-yellow-400/85 via-black/60 to-yellow-400/85
-          backdrop-blur-lg border border-white/30
-          shadow-lg
-        "
+                  min-w-[320px] md:w-120 rounded-2xl p-8
+                  bg-black
+                  border border-blue-500
+                  shadow-lg
+                  "
               >
                 <p className="text-sm opacity-60">
                   {String((index % cards.length) + 1).padStart(2, "0")}
                 </p>
 
-                <h3 className="text-2xl text-yellow-400 font-semibold mt-3 mb-4">
+                <h3 className="text-2xl text-blue-500 font-semibold mt-3 mb-4">
                   {card.title}
                 </h3>
 
@@ -113,7 +108,7 @@ export default function DesignProcessSection() {
                 <ul className="space-y-2 text-sm">
                   {card.outputs.map((item, i) => (
                     <li key={i} className="flex gap-2">
-                      <span className="text-yellow-500">•</span>
+                      <span className="text-blue-500">•</span>
                       {item}
                     </li>
                   ))}

@@ -1,8 +1,8 @@
 export default function DisclaimerPage() {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-16">
+    <main className="min-h-screen bg-[#05101b]  text-white px-6 py-16">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-6 text-yellow-400">
+        <h1 className="text-4xl font-bold mb-6 mt-20 text-white/80">
           Disclaimer
         </h1>
 
@@ -15,7 +15,7 @@ export default function DisclaimerPage() {
 
         {/* Risk Warning */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Risk Warning
           </h2>
 
@@ -32,7 +32,7 @@ export default function DisclaimerPage() {
 
         {/* Risk Disclosure */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Risk Disclosure
           </h2>
 
@@ -47,7 +47,7 @@ export default function DisclaimerPage() {
 
         {/* Exchange Rate Risk */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Exchange Rate Risk
           </h2>
 
@@ -61,7 +61,7 @@ export default function DisclaimerPage() {
 
         {/* Event Risk */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Event Risk
           </h2>
 
@@ -75,7 +75,7 @@ export default function DisclaimerPage() {
 
         {/* Operational Risk */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Operational Risk
           </h2>
 
@@ -89,7 +89,7 @@ export default function DisclaimerPage() {
 
         {/* Margin & Leverage Risk */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Margin and Leverage Risk
           </h2>
 
@@ -104,7 +104,7 @@ export default function DisclaimerPage() {
 
         {/* No Guarantee */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             No Guarantee of Profit
           </h2>
 
@@ -117,7 +117,7 @@ export default function DisclaimerPage() {
         </section>
 
         {/* Closing */}
-        <div className="border-t border-white/10 pt-6">
+        <div className="border-t border-white/10 pt-6 text-blue-800">
           <p className="text-white/80">
             This disclaimer does not cover all risks associated with trading
             financial instruments. By using our platform, you acknowledge and

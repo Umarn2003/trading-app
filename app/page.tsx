@@ -29,7 +29,8 @@ const slides = [
   {
     image: "/tradingplatform-3.png",
     title: "Investissez dans Votre Avenir Aujourd'hui",
-    description: "Propriétés de haute valeur situées dans des emplacements privilégiés.",
+    description:
+      "Propriétés de haute valeur situées dans des emplacements privilégiés.",
   },
 ];
 
@@ -42,11 +43,13 @@ export default function HeroSection() {
     },
     {
       title: "Exécution Rapide",
-      description: "Placez des ordres instantanément avec une exécution à haute vitesse.",
+      description:
+        "Placez des ordres instantanément avec une exécution à haute vitesse.",
     },
     {
       title: "Marchés Mondiaux",
-      description: "Accédez au Forex, Crypto, Indices, ETFs depuis une seule plateforme.",
+      description:
+        "Accédez au Forex, Crypto, Indices, ETFs depuis une seule plateforme.",
     },
     {
       title: "Support 24/7",
@@ -56,7 +59,7 @@ export default function HeroSection() {
 
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (e:React.MouseEvent) => {
+  const handleMouseMove = (e: React.MouseEvent) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width - 0.5) * 20;
     const y = ((e.clientY - rect.top) / rect.height - 0.5) * 20;
@@ -73,7 +76,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="bg-black">
+    <div className="bg-[#07071b] ">
       <Hero />
 
       <FadeSlideInn>
@@ -100,7 +103,6 @@ export default function HeroSection() {
         </div>
       </FadeSlideInn>
 
-      
       <FadeSlideInn>
         <div id="cfdexplaination">
           <DesignProcessSection />
@@ -108,8 +110,9 @@ export default function HeroSection() {
       </FadeSlideInn>
 
       <FadeSlideInn>
-        <section className="relative bg-black overflow-hidden py-32 px-6 md:px-10">
+        <section className="relative bg-[#07071b]  overflow-hidden py-32 px-6 md:px-10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center relative z-10">
+            {/* Interactive Image */}
             <div
               className="relative w-full h-[75vh] rounded-3xl overflow-hidden shadow-2xl cursor-pointer"
               onMouseMove={handleMouseMove}
@@ -124,39 +127,42 @@ export default function HeroSection() {
                 }}
               >
                 <Image
-                  src="/forex copy.png"
+                  src="/mobile.png"
                   alt="Pourquoi Nous Choisir"
                   fill
                   className="object-cover rounded-3xl object-center ml-20"
                 />
-                <div className="absolute inset-0 bg-linear-to-tr from-black/60 via-transparent to-black/30 rounded-3xl animate-gradient-x"></div>
+                {/* Blue overlay gradient */}
+                <div className="absolute inset-0  animate-gradient-x"></div>
               </div>
             </div>
 
-            <div className="relative bg-linear-to-br from-gray-900/60 via-black/40 to-black/70 p-8 rounded-2xl shadow-2xl flex flex-col justify-center space-y-8">
-              <h3 className="bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text text-sm font-semibold uppercase tracking-wide">
+            {/* Text Content */}
+            <div className="relative bg-blue-500/10 p-8 rounded-2xl shadow-2xl flex flex-col justify-center space-y-8">
+              <h3 className="text-blue-500 bg-clip-text text-sm font-semibold uppercase tracking-wide">
                 Pourquoi Nous Choisir
               </h3>
-              <h2 className="text-xl md:text-4xl font-bold leading-snug drop-shadow-lg bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+              <h2 className="text-xl md:text-4xl font-bold leading-snug drop-shadow-lg text-white/90  bg-clip-text">
                 Découvrez le Trading CFD Ultra-Premium
               </h2>
               <p className="text-white/70 md:text-base text-sm leading-relaxed max-w-md drop-shadow-md">
                 Trade001 combine vitesse, sécurité et technologie avancée pour
-                autonomiser les traders à tous les niveaux. Notre plateforme offre une
-                expérience transparente et intuitive sur les marchés mondiaux.
+                autonomiser les traders à tous les niveaux. Notre plateforme
+                offre une expérience transparente et intuitive sur les marchés
+                mondiaux.
               </p>
 
               <div className="grid grid-cols-1 gap-5">
                 {features.map((feature, idx) => (
                   <div
                     key={idx}
-                    className="flex items-start gap-4 p-4 rounded-xl group bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:translate-x-2 hover:scale-105 transition-all duration-500"
+                    className="flex items-start gap-4 p-4 rounded-xl group bg-blue-900/5 backdrop-blur-sm hover:bg-blue-900/10 hover:translate-x-2 hover:scale-105 transition-all duration-500"
                   >
                     <div>
-                      <h4 className="text-white font-semibold group-hover:text-yellow-400 transition-colors">
+                      <h4 className="text-blue-500 font-semibold group-hover:text-white/70 transition-colors">
                         {feature.title}
                       </h4>
-                      <p className="text-gray-300 text-sm">
+                      <p className="text-blue-200 text-sm">
                         {feature.description}
                       </p>
                     </div>
@@ -165,10 +171,9 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-
-          <div className="absolute inset-0 'bg-[radial-gradient(circle,_rgba(255,255,255,0.02)_1px,_transparent_1px)]' bg-size-60px_60px pointer-events-none animate-pulse"></div>
         </section>
       </FadeSlideInn>
+
       <FadeSlideInn>
         <div id="deposit">
           <DepositSection />

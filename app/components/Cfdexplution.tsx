@@ -36,8 +36,9 @@ export default function Timeline() {
   }, []);
 
   return (
-    <section className="bg-black py-32 overflow-hidden">
+    <section className="bg-[#07071b] py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative">
+        {/* Dashed timeline line */}
         <svg
           className="absolute top-40 left-1/2 -translate-x-1/2 w-[90%] hidden lg:block"
           viewBox="0 0 1200 240"
@@ -45,17 +46,17 @@ export default function Timeline() {
         >
           <path
             d="M40 120 C300 20, 600 220, 860 120 C1000 40, 1100 140, 1180 120"
-            stroke="white"
+            stroke="#3B82F6"
             strokeWidth="1"
             strokeDasharray="4 10"
           />
         </svg>
 
         <div className="text-center max-w-3xl mx-auto mb-28">
-          <h2 className="text-2xl md:text-5xl bg-linear-to-br from-white/70 font-semibold via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
+          <h2 className="text-2xl md:text-5xl text-white/80 font-semibold mb-4">
             Explication CFD
           </h2>
-          <p className="text-white/70 text-lg">
+          <p className="text-blue-500 text-lg">
             Suivez un processus d'intégration simple et commencez à trader
             rapidement.
           </p>
@@ -77,19 +78,18 @@ export default function Timeline() {
                 key={i}
                 className={`flex flex-col items-center text-center transition-all duration-700
                 ${offsets[i]}
-                ${
-                  show ? "opacity-150 translate-x-0" : "opacity-0 translate-y-6"
-                }`}
+                ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-y-6"}
+                `}
               >
-                <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-6 shadow-sm">
-                  <Icon className="w-7 h-7 text-black" />
+                <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center mb-6 shadow-sm">
+                  <Icon className="w-7 h-7 text-white" />
                 </div>
 
-                <h3 className="text-xl font-bold text-yellow-400/85 mb-3">
+                <h3 className="text-xl font-bold text-blue-500 mb-3">
                   {step.title}
                 </h3>
 
-                <p className="text-white/70 text-sm leading-relaxed max-w-xs">
+                <p className="text-white/80 text-sm leading-relaxed max-w-xs">
                   {step.description}
                 </p>
               </div>

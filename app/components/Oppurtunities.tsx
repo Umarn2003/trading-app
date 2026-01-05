@@ -45,7 +45,6 @@ export const Oppurtunities: React.FC = () => {
 
   const [selectedImage, setSelectedImage] = useState(services[0].image);
 
-  /* 🔹 Scroll reveal for list items */
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -73,8 +72,7 @@ export const Oppurtunities: React.FC = () => {
   }, []);
 
   return (
-    <section className="min-h-screen bg-black py-16 px-8">
-      {/* LOCAL ANIMATION (SAFE IN APP ROUTER) */}
+    <section className="min-h-screen bg-[#07071b]  py-16 px-8">
       <style>{`
         @keyframes imageSlideIn {
           from {
@@ -94,34 +92,37 @@ export const Oppurtunities: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="mb-16 text-center">
-          <p className="text-2xl md:text-5xl font-bold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
+          <p className="text-2xl md:text-5xl font-bold text-white bg-clip-text mb-4">
             Nos Opportunités
           </p>
-          <h2 className="text-lg text-white/70">
+          <h2 className="text-lg text-blue-500">
             Courtier CFD et Forex de premier plan pour traders professionnels
           </h2>
         </div>
 
-        <div className="flex gap-12 items-start justify-center flex-col">
+        <div className="flex gap-12 items-start justify-center flex-col relative">
+          {/* IMAGE */}
           <div className="relative h-[60vh]">
             <img
-              src="/cfd copy.png"
+              src="/falt.png"
               alt="image de trading forex"
               className="relative w-full h-full object-cover rounded-lg shadow-lg animate-image-slide"
             />
-            <div className="" />
           </div>
+
           {/* LEFT LIST */}
-          <div className="space-y-10 p-5 absolute w-1/3 ">
+          <div className="space-y-10 p-5 absolute w-1/3">
             {services.map((service, i) => {
               const isVisible = visibleItems.includes(i);
 
               return (
                 <div
                   key={service.id}
-                  ref={(el) => {itemsRef.current[i] = el;}}
+                  ref={(el) => {
+                    itemsRef.current[i] = el;
+                  }}
                   style={{ transitionDelay: `${i * 120}ms` }}
-                  className={`border-t border-yellow-500 pt-6 cursor-pointer group
+                  className={`border-t border-blue-500 pt-6 cursor-pointer group
                     transition-all duration-700 ease-out transform
                     ${
                       isVisible
@@ -139,11 +140,11 @@ export const Oppurtunities: React.FC = () => {
                   <div className="flex justify-between mb-4">
                     <div className="flex gap-4">
                       <span className="text-white/80">{service.number}</span>
-                      <h3 className="text-xl font-semibold text-yellow-400/85">
+                      <h3 className="text-xl font-semibold text-white">
                         {service.title}
                       </h3>
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-yellow-400 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition" />
+                    <ArrowUpRight className="w-5 h-5 text-white/90 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition" />
                   </div>
 
                   <div

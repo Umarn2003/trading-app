@@ -1,8 +1,8 @@
 export default function ArbitragePage() {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-16">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-6 text-yellow-400">
+    <main className="min-h-screen bg-[#05101b]  text-white px-6 py-16">
+      <div className="max-w-4xl mx-auto mt-20">
+        <h1 className="text-4xl font-bold mb-6 mt-20 text-white/80">
           Arbitrage Trading
         </h1>
 
@@ -16,7 +16,7 @@ export default function ArbitragePage() {
 
         {/* What is Arbitrage */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             What Is Arbitrage in the Crypto Market?
           </h2>
 
@@ -31,7 +31,7 @@ export default function ArbitragePage() {
 
         {/* How it works */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             How Does Crypto Arbitrage Work?
           </h2>
 
@@ -46,7 +46,7 @@ export default function ArbitragePage() {
 
         {/* Our approach */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Our Approach to Crypto Arbitrage
           </h2>
 
@@ -74,7 +74,7 @@ export default function ArbitragePage() {
 
         {/* Benefits */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold text-blue-800 mb-4">
             Benefits of Crypto Arbitrage
           </h2>
 
@@ -87,7 +87,7 @@ export default function ArbitragePage() {
 
         {/* Challenges */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Challenges and Risk Considerations
           </h2>
 
@@ -109,7 +109,7 @@ export default function ArbitragePage() {
 
         {/* Why choose us */}
         <section className="border-t border-white/10 pt-6">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
             Why Choose Trade001?
           </h2>
 

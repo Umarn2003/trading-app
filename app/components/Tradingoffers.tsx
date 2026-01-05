@@ -37,18 +37,10 @@ export default function TradingOfferLayered() {
     return () => imageEl?.removeEventListener("mousemove", handleMouse);
   }, []);
 
-  // Combined transform for 3D + scroll
-  const getImageTransform = () => {
-    const translateX = isVisible ? 0 : 100; // slide from right
-    return `translateX(${translateX}px) perspective(1000px) scale(${
-      isVisible ? 1 : 0.8
-    })`;
-  };
-
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black py-16 px-6 flex flex-col items-center overflow-hidden gap-10"
+      className="relative bg-[#07071b]  py-16 px-6 flex flex-col items-center overflow-hidden gap-10"
     >
       {/* Heading slides from left */}
       <div
@@ -56,11 +48,11 @@ export default function TradingOfferLayered() {
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-40"
         }`}
       >
-        <h2 className="text-2xl md:text-5xl bg-linear-to-br from-white/70 font-semibold via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
+        <h2 className="text-2xl md:text-5xl font-semibold text-white/80 mb-4">
           Offres de Trading
         </h2>
-        <div className="h-1 w-40 bg-linear-to-r from-yellow-500 via-white/70 to-yellow-500 mb-6 mx-auto" />
-        <p className="text-white/70 text-lg leading-relaxed">
+        <div className="h-1 w-40 bg-blue-500/40 mb-6 mx-auto" />
+        <p className="text-blue-500 text-lg leading-relaxed">
           Survolez l'offre pour explorer nos opportunités de trading premium
           dans le Forex, Crypto, Indices et ETFs.
         </p>
@@ -69,7 +61,7 @@ export default function TradingOfferLayered() {
       {/* Image slides from right with 3D parallax */}
       <div
         ref={imageRef}
-        className="relative max-w-5xl h-64 md:h-80 transition-transform duration-700 "
+        className="relative max-w-5xl h-64 md:h-80 transition-transform duration-700"
       >
         {/* Glow & Depth */}
         <div
@@ -77,11 +69,11 @@ export default function TradingOfferLayered() {
           style={{
             background: `radial-gradient(circle at ${mousePos.x * 100}% ${
               mousePos.y * 100
-            }%, rgba(250,204,21,0.3), transparent 50%)`,
+            }%, rgba(59,130,246,0.3), transparent 50%)`,
           }}
         />
 
-        <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl hover:scale-105  transition-transform duration-500">
+        <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-500">
           <img
             src="https://pink-mallard-727286.hostingersite.com/wp-content/uploads/2025/12/transparent-table-png.png"
             alt="Offres de trading"
@@ -93,15 +85,15 @@ export default function TradingOfferLayered() {
         {isVisible && (
           <>
             <div
-              className="absolute w-2 h-2 bg-yellow-400 rounded-full blur-sm animate-float1"
+              className="absolute w-2 h-2 bg-blue-500 rounded-full blur-sm animate-float1"
               style={{ top: "10%", left: "15%" }}
             />
             <div
-              className="absolute w-3 h-3 bg-yellow-500 rounded-full blur-sm animate-float2"
+              className="absolute w-3 h-3 bg-blue-500 rounded-full blur-sm animate-float2"
               style={{ top: "70%", right: "20%" }}
             />
             <div
-              className="absolute w-2 h-2 bg-yellow-300 rounded-full blur-sm animate-float3"
+              className="absolute w-2 h-2 bg-blue-500 rounded-full blur-sm animate-float3"
               style={{ bottom: "15%", left: "25%" }}
             />
           </>

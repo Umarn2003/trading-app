@@ -58,7 +58,7 @@ export default function TakeControlSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-black py-24"
+      className="relative overflow-hidden bg-[#07071b] py-24"
     >
       {/* UNIQUE LOCAL ANIMATIONS */}
       <style>{`
@@ -118,7 +118,7 @@ export default function TakeControlSection() {
           active ? "active" : ""
         }`}
       >
-        <h2 className="text-2xl md:text-5xl font-semibold mb-20 bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
+        <h2 className="text-2xl md:text-5xl font-semibold mb-20 text-white/80">
           Prenez le contrôle de vos fonds
         </h2>
 
@@ -136,16 +136,16 @@ export default function TakeControlSection() {
                 {index === 1 && (
                   <div className="absolute left-0 top-0 h-full w-px bg-white/30">
                     <div
-                      className={`absolute top-0 left-0 w-px bg-yellow-500 divider-charge ${
+                      className={`absolute top-0 left-0 w-px bg-blue-400 divider-charge ${
                         active ? "active" : ""
                       }`}
                     />
                   </div>
                 )}
 
-                <Icon className="w-10 h-10 mb-6 text-white" />
+                <Icon className="w-10 h-10 mb-6 text-blue-600" />
 
-                <h3 className="text-lg font-semibold leading-snug mb-3 max-w-xs text-yellow-400/85">
+                <h3 className="text-lg font-semibold leading-snug mb-3 max-w-xs text-blue-500">
                   {item.title}
                 </h3>
 
@@ -160,7 +160,7 @@ export default function TakeControlSection() {
                 {item.learnMore && (
                   <a
                     href="#"
-                    className="inline-flex items-center gap-1 text-white mt-4 hover:text-yellow-500 transition text-sm"
+                    className="inline-flex items-center gap-1 text-white mt-4 hover:text-blue-300 transition text-sm"
                   >
                     En savoir plus <span className="text-lg">›</span>
                   </a>
@@ -170,7 +170,7 @@ export default function TakeControlSection() {
           })}
         </div>
 
-        <div className="my-16 h-px bg-white/40" />
+        <div className="my-16 h-px bg-blue-500" />
 
         <div className="flex items-center gap-14 flex-wrap">
           {payments.map((p, i) => (
@@ -184,11 +184,11 @@ export default function TakeControlSection() {
           ))}
         </div>
 
-        <div className="my-16 h-px bg-white/40" />
+        <div className="my-16 h-px bg-blue-500" />
 
         <button
-          className={`rounded-full cursor-pointer hover:text-black border border-yellow-500 hover:border-white hover:bg-yellow-500 bg-transparent transition-all duration-300
-          text-white px-8 py-3 text-base font-semibold ${
+          className={`rounded-full cursor-pointer text-white shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-500/40 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300
+           px-8 py-3 text-base font-semibold cta-lock ${
             active ? "active" : ""
           }`}
         >

@@ -69,34 +69,34 @@ export const FAQForTrading: React.FC = () => {
   };
 
   return (
-    <div className="bg-black/30 py-10 px-8">
+    <div className="bg-[#07071b]  py-10 px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">
-            <div className="w-32 h-32 bg-linear-to-br from-amber-300 to-black/30 rounded-full flex items-center justify-center">
+            <div className="w-32 h-32 bg-blue-700 rounded-full flex items-center justify-center">
               <div className="relative">
-                <div className="w-20 h-20 bg-black rounded-2xl shadow-lg flex items-center justify-center transform rotate-12">
-                  <div className="w-8 h-8 bg-yellow-500 rounded"></div>
+                <div className="w-20 h-20 bg-[#06122a] rounded-2xl shadow-lg flex items-center justify-center transform rotate-12">
+                  <div className="w-8 h-8 bg-blue-400 rounded"></div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-12 h-12 bg-yellow-500 rounded-full opacity-80"></div>
-                <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-yellow-500 rounded-full"></div>
+                <div className="absolute -top-2 -right-2 w-12 h-12 bg-blue-400 rounded-full opacity-80"></div>
+                <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-blue-800 rounded-full"></div>
               </div>
             </div>
           </div>
-          <h2 className="text-2xl md:text-5xl bg-linear-to-br from-white/70 font-semibold via-yellow-500 to-black/50 text-transparent bg-clip-text mb-4">
+          <h2 className="text-2xl md:text-5xl font-semibold text-white/80 mb-4">
             FAQ sur le Trading
           </h2>
         </div>
 
         <div className="space-y-4">
           {faqItems.map((item) => (
-            <div key={item.id} className="border-b border-yellow-500 pb-4">
+            <div key={item.id} className="border-b border-blue-400 pb-4">
               <button
                 onClick={() => toggleItem(item.id)}
                 className="w-full flex items-start justify-between py-4 text-left hover:opacity-70 transition group hover:cursor-pointer"
               >
                 <div className="flex items-start gap-4 flex-1">
-                  <span className="text-yellow-400 font-semibold text-lg">
+                  <span className="text-white/70 font-semibold text-lg">
                     {item.number}
                   </span>
                   <h3 className="text-xl font-normal text-white/90 flex-1 group-hover:translate-x-2 transition-transform duration-400">
@@ -104,7 +104,7 @@ export const FAQForTrading: React.FC = () => {
                   </h3>
                 </div>
                 <ChevronDown
-                  className={`w-6 h-6 text-yellow-400 transition-transform shrink-0 ml-4 group-hover:-translate-x-2 duration-400 ${
+                  className={`w-6 h-6 text-blue-400 transition-transform shrink-0 ml-4 group-hover:-translate-x-2 duration-400 ${
                     openItem === item.id ? "transform rotate-180" : ""
                   }`}
                 />
