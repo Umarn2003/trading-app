@@ -187,7 +187,7 @@ export default function TakeControlSection() {
         <div className="my-16 h-px bg-blue-500" />
 
         <button
-          className={`rounded-full cursor-pointer text-white shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-500/40 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300
+          className={`rounded-full cursor-pointer text-white shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-600 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300
            px-8 py-3 text-base font-semibold cta-lock ${
             active ? "active" : ""
           }`}

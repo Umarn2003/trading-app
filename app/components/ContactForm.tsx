@@ -61,7 +61,7 @@ export const ContactForm = () => {
           Que se passe-t-il ensuite ?
         </h2>
 
-        <div className="space-y-5 text-sm text-blue-100">
+        <div className="space-y-5 text-sm text-white">
           {[
             {
               icon: <TrendingUp />,
@@ -140,7 +140,7 @@ export const ContactForm = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-60 text-white/80 px-4 sm:px-14 py-2 font-semibold hover:shadow-[0_0_15px_rgba(59,130,246,0.6)] shadow-blue-950 hover:bg-transparent hover:text-white  text-black shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-500/40 hover:scale-105 transition-all hover:cursor-pointertransition duration-300 hover:cursor-pointer hover:border-blue-800 rounded-lg  flex items-center justify-center gap-2"
+              className="w-60 text-white/80 px-4 sm:px-14 py-2 font-semibold hover:shadow-[0_0_15px_rgba(59,130,246,0.6)] shadow-blue-950 hover:bg-transparent hover:text-white  text-black shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-600 hover:scale-105 transition-all hover:cursor-pointertransition duration-300 hover:cursor-pointer hover:border-blue-800 rounded-lg  flex items-center justify-center gap-2"
             >
               {loading ? "Soumission..." : "Nous Contacter"}
               <Send className="w-4 h-4" />

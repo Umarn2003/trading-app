@@ -162,7 +162,7 @@ export default function HeroSection() {
                       <h4 className="text-blue-500 font-semibold group-hover:text-white/70 transition-colors">
                         {feature.title}
                       </h4>
-                      <p className="text-blue-200 text-sm">
+                      <p className="text-white text-sm">
                         {feature.description}
                       </p>
                     </div>

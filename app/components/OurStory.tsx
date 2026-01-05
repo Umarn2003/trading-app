@@ -143,7 +143,7 @@ export default function OurStory() {
               Tradez les cryptomonnaies avec un levier allant jusqu'à 1:150. Commencez avec seulement 100 $ pour obtenir l'effet d'un capital de 15 000 $ !
             </p>
             <button
-              className={` text-white  ml-4 -rotate-6 bg-blue-500/40 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition-all hover:bg-transparent  ${
+              className={` text-white  ml-4 -rotate-6 bg-blue-600 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition-all hover:bg-transparent  ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{ transitionDelay: "600ms" }}
