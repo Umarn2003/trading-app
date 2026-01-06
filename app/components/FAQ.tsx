@@ -112,7 +112,7 @@ export const FAQForTrading: React.FC = () => {
 
               {openItem === item.id && (
                 <div className="ml-12 mt-2 pr-10">
-                  <p className="text-white/70 leading-relaxed">{item.answer}</p>
+                  <p className="text-white leading-relaxed">{item.answer}</p>
                 </div>
               )}
             </div>
