@@ -53,7 +53,7 @@ export default function Hero() {
             <p className="font-bold text-white">
               <span className="text-blue-500">★ 4.2 </span>
             </p>
-            <p className="text-whit">Note Trustpilot</p>
+            <p className="text-white">Note Trustpilot</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center sm:pr-4 gap-2">

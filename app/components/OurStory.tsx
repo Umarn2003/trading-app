@@ -127,7 +127,7 @@ export default function OurStory() {
         >
           <div className="max-w-xl py-16">
             <h2
-              className={`text-3xl font-bold text-white/80 mb-4 transition-all duration-700 -rotate-4 ${
+              className={`text-3xl font-bold text-white mb-4 transition-all duration-700 -rotate-4 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{ transitionDelay: "400ms" }}
