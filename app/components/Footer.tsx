@@ -14,25 +14,25 @@ export default function Footer() {
             </Link>
             <Link
               href="/pages/Privacypolicy"
-              className="hover:text-blue-400 transition"
+              className="hover:text-blue-500 transition"
             >
               Politique de Confidentialité
             </Link>
             <Link
               href="/pages/Disclaimer"
-              className="hover:text-blue-400 transition"
+              className="hover:text-blue-500 transition"
             >
               Avis de Non-Responsabilité
             </Link>
             <Link
               href="/pages/ArbritragetRading"
-              className="hover:text-blue-400 transition"
+              className="hover:text-blue-500 transition"
             >
               Trading d'Arbitrage
             </Link>
             <Link
               href="/pages/Smfs"
-              className="hover:text-blue-400 transition"
+              className="hover:text-blue-500 transition"
             >
               SMSF
             </Link>

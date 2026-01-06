@@ -135,7 +135,7 @@ export default function OurStory() {
               Tradez les Cryptomonnaies avec Levier
             </h2>
             <p
-              className={`text-gray-400 mb-14 ml-3 transition-all duration-700 -rotate-4 ${
+              className={`text-white/90 mb-14 ml-3 transition-all duration-700 -rotate-4 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{ transitionDelay: "500ms" }}

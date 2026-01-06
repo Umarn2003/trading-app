@@ -103,7 +103,7 @@ export default function DesignProcessSection() {
                   {card.title}
                 </h3>
 
-                <p className="text-white/80 mb-6">{card.description}</p>
+                <p className="text-white/90 mb-6">{card.description}</p>
 
                 <ul className="space-y-2 text-sm">
                   {card.outputs.map((item, i) => (

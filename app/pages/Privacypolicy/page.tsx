@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
 
         {/* Section 1 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             1. Personal Information We Collect
           </h2>
 
@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
 
         {/* Section 2 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             2. Cookies and Tracking Technologies
           </h2>
 
@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
 
         {/* Section 3 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             3. How We Use Collected Information
           </h2>
 
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
 
         {/* Section 4 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             4. Data Protection and Security
           </h2>
 
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
 
         {/* Section 5 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             5. Children’s Privacy
           </h2>
 
@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
 
         {/* Section 6 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             6. Acceptance of This Policy
           </h2>
 
@@ -115,7 +115,7 @@ export default function PrivacyPolicyPage() {
 
         {/* Section 7 */}
         <section>
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             7. Contact Us
           </h2>
 

@@ -77,16 +77,16 @@ export default function BenefitsSection() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
         {/* LEFT CONTENT */}
         <div className="lg:col-span-1">
-          <h3 className="text-xl md:text-4xl font-bold bg-clip-text text-transparent bg-white/80 leading-tight mb-6">
+          <h3 className="text-xl md:text-4xl font-bold bg-clip-text text-transparent bg-white/90 leading-tight mb-6">
             Points <br /> Clés
           </h3>
 
-          <p className="text-white/70 mb-10 max-w-sm">
+          <p className="text-white/90 mb-10 max-w-sm">
             Boostez votre succès de trading avec FundedNext et obtenez la
             récompense maximale.
           </p>
 
-          <div className="space-y-4 text-white/80">
+          <div className="space-y-4 text-white/90">
             <p>• Commissions faibles</p>
             <p>• Spreads bruts</p>
             <p>• Meilleurs forfaits</p>
@@ -121,7 +121,7 @@ export default function BenefitsSection() {
                   {item.title}
                 </h3>
 
-                <p className="text-white/60 text-lg leading-relaxed">
+                <p className="text-white/90 text-lg leading-relaxed">
                   {item.desc}
                 </p>
               </div>

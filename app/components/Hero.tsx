@@ -22,15 +22,15 @@ export default function Hero() {
               Les marchés évoluent rapidement. Vous aussi.
             </h1>
 
-            <p className="mt-4 sm:mt-6 max-w-lg text-base sm:text-lg text-white/80">
+            <p className="mt-4 sm:mt-6 max-w-lg text-base sm:text-lg text-white">
               Accédez aux marchés financiers mondiaux avec une plateforme fiable, rapide et sécurisée.
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
-              <button className="w-full sm:w-auto rounded-2xl px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white/80 shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-500/45 to-black/2 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+              <button className="w-full sm:w-auto rounded-2xl px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white/90  bg-blue-600  hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
                 Commencez à trader
               </button>
-               <button className="w-full sm:w-auto rounded-2xl px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white/80 shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-500/45 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+               <button className="w-full sm:w-auto rounded-2xl px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white/90  bg-blue-600 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
                 Essayez la démo gratuite
               </button>
             </div>
@@ -46,19 +46,19 @@ export default function Hero() {
         <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-8 text-sm md:text-lg text-white/80 mt-10 sm:mt-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/30 pr-0 sm:pr-4 gap-2">
             <p className="font-bold text-blue-500">32 Million +</p>
-            <p className="text-white/80">Clients enregistrés</p>
+            <p className="text-white">Clients enregistrés</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/30 pr-0 sm:pr-4 gap-2">
             <p className="font-bold text-white">
               <span className="text-blue-500">★ 4.2 </span>
             </p>
-            <p className="text-white/870">Note Trustpilot</p>
+            <p className="text-whit">Note Trustpilot</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center sm:pr-4 gap-2">
             <p className="font-semibold text-blue-500">Bourse de Paris</p>
-            <p className="text-white/80">Coté depuis 2013</p>
+            <p className="text-white">Coté depuis 2013</p>
           </div>
         </div>
       </div>

@@ -145,7 +145,7 @@ export default function HeroSection() {
               <h2 className="text-xl md:text-4xl font-bold leading-snug drop-shadow-lg text-white/90  bg-clip-text">
                 Découvrez le Trading CFD Ultra-Premium
               </h2>
-              <p className="text-white/70 md:text-base text-sm leading-relaxed max-w-md drop-shadow-md">
+              <p className="text-white/90 md:text-base text-sm leading-relaxed max-w-md drop-shadow-md">
                 Trade001 combine vitesse, sécurité et technologie avancée pour
                 autonomiser les traders à tous les niveaux. Notre plateforme
                 offre une expérience transparente et intuitive sur les marchés

@@ -73,12 +73,12 @@ export const FAQForTrading: React.FC = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">
-            <div className="w-32 h-32 bg-blue-700 rounded-full flex items-center justify-center">
+            <div className="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center">
               <div className="relative">
                 <div className="w-20 h-20 bg-[#06122a] rounded-2xl shadow-lg flex items-center justify-center transform rotate-12">
                   <div className="w-8 h-8 bg-blue-400 rounded"></div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-12 h-12 bg-blue-400 rounded-full opacity-80"></div>
+                <div className="absolute -top-2 -right-2 w-12 h-12 bg-blue-700 rounded-full opacity-80"></div>
                 <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-blue-800 rounded-full"></div>
               </div>
             </div>
@@ -90,7 +90,7 @@ export const FAQForTrading: React.FC = () => {
 
         <div className="space-y-4">
           {faqItems.map((item) => (
-            <div key={item.id} className="border-b border-blue-400 pb-4">
+            <div key={item.id} className="border-b border-blue-500 pb-4">
               <button
                 onClick={() => toggleItem(item.id)}
                 className="w-full flex items-start justify-between py-4 text-left hover:opacity-70 transition group hover:cursor-pointer"

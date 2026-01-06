@@ -19,22 +19,22 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6 lg:gap-10 text-white">
-            <Link href="#about" className="hover:text-blue-400/85 transition">
+            <Link href="#about" className="hover:text-blue-500 transition">
               À propos
             </Link>
-            <Link href="#tradingoffers" className="hover:text-blue-400/85 transition">
+            <Link href="#tradingoffers" className="hover:text-blue-500 transition">
               Offres de Trading
             </Link>
-            <Link href="#opportunities" className="hover:text-blue-400/85 transition">
+            <Link href="#opportunities" className="hover:text-blue-500 transition">
               Opportunités
             </Link>
-            <Link href="#deposit" className="hover:text-blue-400/85 transition">
+            <Link href="#deposit" className="hover:text-blue-500 transition">
               Dépôt
             </Link>
-            <Link href="#cfdexplaination" className="hover:text-blue-400/85 transition">
+            <Link href="#cfdexplaination" className="hover:text-blue-500 transition">
               Explication CFD
             </Link>
-            <Link href="#contactus" className="hover:text-blue-400/85 transition">
+            <Link href="#contactus" className="hover:text-blue-500 transition">
               Nous contacter
             </Link>
           </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center gap-2 sm:gap-3">
             <Link href="/login">
-              <button className="rounded-full px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white  bg-blue-600 hover:text-white hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+              <button className="rounded-full px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white  bg-blue-600 hover:text-white shadow-[0_0_18px_rgba(59,130,246,0.45)] hover:bg-black hover:scale-105 transition-all duration-300 hover:cursor-pointer">
                 Se connecter
               </button>
             </Link>
@@ -70,22 +70,22 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col px-4 sm:px-6 space-y-3 text-white">
-          <Link href="#about" className="hover:text-blue-400 transition">
+          <Link href="#about" className="hover:text-blue-500 transition">
             À propos
           </Link>
-          <Link href="#tradingoffers" className="hover:text-blue-400 transition">
+          <Link href="#tradingoffers" className="hover:text-blue-500 transition">
             Offres de Trading
           </Link>
-          <Link href="#opportunities" className="hover:text-blue-400 transition">
+          <Link href="#opportunities" className="hover:text-blue-500 transition">
             Opportunités
           </Link>
-          <Link href="#deposit" className="hover:text-blue-400 transition">
+          <Link href="#deposit" className="hover:text-blue-500 transition">
             Dépôt
           </Link>
-          <Link href="#cfdexplaination" className="hover:text-blue-400 transition">
+          <Link href="#cfdexplaination" className="hover:text-blue-500 transition">
             Explication CFD
           </Link>
-          <Link href="#contactus" className="hover:text-blue-400 transition">
+          <Link href="#contactus" className="hover:text-blue-500 transition">
             Nous contacter
           </Link>
 

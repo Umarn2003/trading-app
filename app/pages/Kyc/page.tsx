@@ -15,7 +15,7 @@ export default function KYCPage() {
 
         {/* Section 1 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             1. Customer Identification
           </h2>
 
@@ -52,7 +52,7 @@ export default function KYCPage() {
 
         {/* Section 2 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             2. Customer Acceptance Criteria
           </h2>
 
@@ -85,7 +85,7 @@ export default function KYCPage() {
 
         {/* Section 3 */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             3. Ongoing Monitoring and Compliance
           </h2>
 
@@ -108,7 +108,7 @@ export default function KYCPage() {
 
         {/* Section 4 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-800">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
             4. Third-Party Verification
           </h2>
 
@@ -120,7 +120,7 @@ export default function KYCPage() {
         </section>
 
         <div className="border-t border-white/10 pt-6">
-          <h3 className="text-xl font-semibold mb-2 text-blue-800">
+          <h3 className="text-xl font-semibold mb-2 text-blue-500">
             Transparency & Security at Trade001
           </h3>
 

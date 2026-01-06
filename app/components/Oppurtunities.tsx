@@ -155,7 +155,7 @@ export const Oppurtunities: React.FC = () => {
                           : "opacity-0 max-h-0"
                       }`}
                   >
-                    <p className="text-white/70">{service.description}</p>
+                    <p className="text-white/90">{service.description}</p>
                   </div>
                 </div>
               );

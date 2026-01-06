@@ -89,7 +89,7 @@ export default function Timeline() {
                   {step.title}
                 </h3>
 
-                <p className="text-white/80 text-sm leading-relaxed max-w-xs">
+                <p className="text-white/90 text-sm leading-relaxed max-w-xs">
                   {step.description}
                 </p>
               </div>

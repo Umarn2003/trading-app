@@ -29,9 +29,9 @@ export const ContactForm = () => {
       <div className="md:w-2/5 p-10 md:p-16 text-white flex flex-col justify-center relative overflow-hidden">
         <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full blur-3xl" />
 
-        <h2 className="md:text-4xl text-2xl font-bold mb-4 leading-tight text-white/80">
+        <h2 className="md:text-4xl text-2xl font-bold mb-4 leading-tight text-white/90">
           Négociez avec Confiance. <br />
-          <span className="text-white/70 font-semibold">
+          <span className="text-white/90 font-semibold">
             Parlez aux Experts du Marché de Trade002.
           </span>
         </h2>
@@ -81,7 +81,7 @@ export const ContactForm = () => {
             },
           ].map((item, i) => (
             <div key={i} className="flex gap-4">
-              <div className="text-white/80 mt-1">{item.icon}</div>
+              <div className="text-blue-500 mt-1">{item.icon}</div>
               <p>{item.text}</p>
             </div>
           ))}
@@ -94,7 +94,7 @@ export const ContactForm = () => {
           onSubmit={handleSubmit}
           className="w-full max-w-3xl bg-transparent backdrop-blur-xl rounded-2xl border border-blue-500 shadow-2xl p-8 md:p-10"
         >
-          <h3 className="text-xl font-semibold text-blue-200 mb-6">
+          <h3 className="text-xl font-semibold text-blue-500 mb-6">
             Commencez Aujourd'hui
           </h3>
 
@@ -120,7 +120,7 @@ export const ContactForm = () => {
               className="input placeholder:text-white/80 text-white px-2 py-1 rounded-3xl bg-transparen border border-blue-500"
             />
             <select className="input bg-transparen text-white px-2 py-1 rounded-3xl border border-blue-500">
-              <option value="" disabled selected hidden>
+              <option value="" disabled hidden>
                 Type de Trading
               </option>
               <option className="text-black">Crypto</option>
@@ -133,14 +133,14 @@ export const ContactForm = () => {
           <textarea
             rows={3}
             placeholder="Parlez-nous de vos objectifs de trading..."
-            className="input resize-none mb-6 placeholder:text-white/80 px-2 py-1 rounded-xl text-white bg-transparent border border-blue-500"
+            className="w-full input resize-none mb-6 placeholder:text-white/80 px-2 py-1 rounded-xl text-white bg-transparent border border-blue-500"
           />
 
           <Link href="/">
             <button
               type="submit"
               disabled={loading}
-              className="w-60 text-white/80 px-4 sm:px-14 py-2 font-semibold hover:shadow-[0_0_15px_rgba(59,130,246,0.6)] shadow-blue-950 hover:bg-transparent hover:text-white  text-black shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-600 hover:scale-105 transition-all hover:cursor-pointertransition duration-300 hover:cursor-pointer hover:border-blue-800 rounded-lg  flex items-center justify-center gap-2"
+              className="w-60 text-white/80 px-4 sm:px-9 py-2 font-semibold hover:shadow-[0_0_15px_rgba(59,130,246,0.6)] shadow-blue-950 hover:bg-transparent hover:text-white  text-black shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-600 hover:scale-105 transition-all hover:cursor-pointertransition duration-300 hover:cursor-pointer hover:border-blue-800 rounded-lg  flex items-center justify-center gap-2"
             >
               {loading ? "Soumission..." : "Nous Contacter"}
               <Send className="w-4 h-4" />
