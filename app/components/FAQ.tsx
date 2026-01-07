@@ -73,24 +73,28 @@ export const FAQForTrading: React.FC = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">
-            <div className="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center">
+            <div className="w-32 h-32 bg-[#5c3ab8] rounded-full flex items-center justify-center">
               <div className="relative">
                 <div className="w-20 h-20 bg-[#06122a] rounded-2xl shadow-lg flex items-center justify-center transform rotate-12">
-                  <div className="w-8 h-8 bg-blue-400 rounded"></div>
+                  <div className="w-8 h-8 bg-[#fafafa] rounded"></div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-12 h-12 bg-blue-700 rounded-full opacity-80"></div>
-                <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-blue-800 rounded-full"></div>
+                <div className="absolute -top-2 -right-2 w-12 h-12 bg-[#797780] rounded-full opacity-80"></div>
+                <div className="absolute -bottom-1 -left-1 w-6 h-6 bg-[#7e67bd] rounded-full"></div>
               </div>
             </div>
           </div>
-          <h2 className="text-2xl md:text-5xl font-semibold text-white/80 mb-4">
-            FAQ sur le Trading
-          </h2>
+          <div className="w-fit mx-auto">
+            <h2 className="text-2xl md:text-5xl font-semibold text-white mb-4">
+              FAQ sur le Trading
+
+            </h2>
+            <div className="h-1 w-3/5 bg-[#9D7CFF]/20 mb-6 mx-auto" />
+          </div>
         </div>
 
         <div className="space-y-4">
           {faqItems.map((item) => (
-            <div key={item.id} className="border-b border-blue-500 pb-4">
+            <div key={item.id} className="border-b border-[#4b2f96] pb-4">
               <button
                 onClick={() => toggleItem(item.id)}
                 className="w-full flex items-start justify-between py-4 text-left hover:opacity-70 transition group hover:cursor-pointer"
@@ -104,7 +108,7 @@ export const FAQForTrading: React.FC = () => {
                   </h3>
                 </div>
                 <ChevronDown
-                  className={`w-6 h-6 text-blue-400 transition-transform shrink-0 ml-4 group-hover:-translate-x-2 duration-400 ${
+                  className={`w-6 h-6 text-[#7C4DFF] transition-transform shrink-0 ml-4 group-hover:-translate-x-2 duration-400 ${
                     openItem === item.id ? "transform rotate-180" : ""
                   }`}
                 />
@@ -112,7 +116,7 @@ export const FAQForTrading: React.FC = () => {
 
               {openItem === item.id && (
                 <div className="ml-12 mt-2 pr-10">
-                  <p className="text-white leading-relaxed">{item.answer}</p>
+                  <p className="text-white/70 leading-relaxed">{item.answer}</p>
                 </div>
               )}
             </div>

@@ -7,12 +7,12 @@ export default function Hero() {
     <section className="relative min-h-screen overflow-hidden text-white">
       {/* Background Image */}
       <Image
-        src="/bg.jpg"
+        src="/bg1.jpeg"
         alt="Arrière-plan éclair"
         fill
-        className="object-top-right opacity-70"
+        className="object-top-left opacity-70"
       />
-
+      <div className="absolute inset-0 bg-black/50"/>
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 sm:pt-24 lg:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -27,10 +27,10 @@ export default function Hero() {
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4">
-              <button className="w-full sm:w-auto rounded-2xl px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white/90  bg-blue-600  hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+              <button className="w-full sm:w-auto rounded-2xl px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white/90  bg-[#7C4DFF]  hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
                 Commencez à trader
               </button>
-               <button className="w-full sm:w-auto rounded-2xl px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white/90  bg-blue-600 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
+               <button className="w-full sm:w-auto rounded-2xl px-4 sm:px-8 py-2 text-sm sm:text-base font-semibold text-white/90  bg-[#7C4DFF] hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300 hover:cursor-pointer">
                 Essayez la démo gratuite
               </button>
             </div>
@@ -45,19 +45,19 @@ export default function Hero() {
         {/* Stats */}
         <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-8 text-sm md:text-lg text-white/80 mt-10 sm:mt-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/30 pr-0 sm:pr-4 gap-2">
-            <p className="font-bold text-blue-500">32 Million +</p>
+            <p className="font-bold text-[#7C4DFF]">32 Million +</p>
             <p className="text-white">Clients enregistrés</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/30 pr-0 sm:pr-4 gap-2">
             <p className="font-bold text-white">
-              <span className="text-blue-500">★ 4.2 </span>
+              <span className="text-[#7C4DFF]">★ 4.2 </span>
             </p>
             <p className="text-white">Note Trustpilot</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center sm:pr-4 gap-2">
-            <p className="font-semibold text-blue-500">Bourse de Paris</p>
+            <p className="font-semibold text-[#7C4DFF]">Bourse de Paris</p>
             <p className="text-white">Coté depuis 2013</p>
           </div>
         </div>

@@ -18,11 +18,21 @@ const features = [
     id: 2,
     icon: Timer,
     title: "Traitement rapide des retraits",
+    desc: [
+      "0% frais d'ouverture / clôture de trades",
+      "0% frais de dépôt et de retrait",
+    ],
+    learnMore: true,
   },
   {
     id: 3,
     icon: CreditCard,
-    title: "Méthodes de paiement globales multiples",
+    title: "Méthodes de paiement globales",
+    desc: [
+      "0% frais d'ouverture / clôture de trades",
+      "0% frais de dépôt et de retrait",
+    ],
+    learnMore: true,
   },
 ];
 
@@ -58,142 +68,182 @@ export default function TakeControlSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[#07071b] py-24"
+      className="relative overflow-hidden bg-linear-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#07071b] py-24"
     >
+      {/* ANIMATED BACKGROUND ELEMENTS */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-[#7C4DFF] rounded-full opacity-10 blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#9D7CFF] rounded-full opacity-10 blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      </div>
+
       {/* UNIQUE LOCAL ANIMATIONS */}
       <style>{`
-        .reveal-shell {
-          opacity: 0;
-          transform: scale(0.96);
-          filter: blur(6px);
-          transition: all 1s cubic-bezier(.22,1,.36,1);
-        }
-        .reveal-shell.active {
-          opacity: 1;
-          transform: scale(1);
-          filter: blur(0);
-        }
-
-        .magnetic-item {
-          opacity: 0;
-          transform: translateY(40px) rotateX(12deg);
-          transition: all 0.9s cubic-bezier(.22,1,.36,1);
-        }
-        .magnetic-item.active {
-          opacity: 1;
-          transform: translateY(0) rotateX(0);
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
 
-        .divider-charge {
-          height: 0;
-          transition: height 1.2s ease-out;
-        }
-        .divider-charge.active {
-          height: 100%;
-        }
-
-        .payment-wave {
-          opacity: 0;
-          transform: translateY(20px) scale(0.85);
-          transition: all 0.6s ease-out;
-        }
-        .payment-wave.active {
-          opacity: 1;
-          transform: translateY(0) scale(1);
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
         }
 
-        .cta-lock {
+        @keyframes shimmer {
+          0% {
+            background-position: -1000px 0;
+          }
+          100% {
+            background-position: 1000px 0;
+          }
+        }
+
+        .slide-up {
           opacity: 0;
-          transform: scale(0.85);
+          animation: slideUp 0.8s cubic-bezier(.22,1,.36,1) forwards;
+        }
+
+        .fade-in {
+          opacity: 0;
+          animation: fadeIn 0.8s cubic-bezier(.22,1,.36,1) forwards;
+        }
+
+        .shimmer-border {
+          position: relative;
+          background: linear-linear(90deg, transparent, rgba(124, 77, 255, 0.3), transparent);
+          background-size: 2000px 100%;
+          animation: shimmer 3s infinite;
+        }
+
+        .feature-card {
+          opacity: 0;
+          transform: translateY(40px);
           transition: all 0.7s cubic-bezier(.22,1,.36,1);
         }
-        .cta-lock.active {
+        
+        .feature-card.active {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .payment-logo {
+          opacity: 0;
+          transform: scale(0.8);
+          transition: all 0.5s cubic-bezier(.22,1,.36,1);
+        }
+        
+        .payment-logo.active {
           opacity: 1;
           transform: scale(1);
+        }
+
+        .glow-effect {
+          box-shadow: 0 0 30px rgba(124, 77, 255, 0.3);
         }
       `}</style>
 
-      <div
-        className={`relative max-w-7xl mx-auto px-6 text-white reveal-shell ${
-          active ? "active" : ""
-        }`}
-      >
-        <h2 className="text-2xl md:text-5xl font-semibold mb-20 text-white/80">
-          Prenez le contrôle de vos fonds
-        </h2>
+      <div className="relative max-w-7xl mx-auto px-6 text-white z-10">
+        {/* HEADER */}
+        <div className={`mb-16 ${active ? 'slide-up' : ''}`}>
+          <h2 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            Prenez le <span className="text-transparent bg-clip-text bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF]">contrôle de</span>
+            <br />
+            vos fonds
+          </h2>
+          <div className="w-24 h-1 bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF] rounded-full mt-4"></div>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-24 items-start">
+        {/* FEATURES GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {features.map((item, index) => {
             const Icon = item.icon;
             return (
               <div
                 key={item.id}
-                style={{ transitionDelay: `${index * 180}ms` }}
-                className={`relative magnetic-item ${active ? "active" : ""} ${
-                  index === 1 ? "lg:pl-12" : ""
-                }`}
+                style={{ transitionDelay: `${index * 150}ms` }}
+                className={`feature-card ${active ? "active" : ""} relative group`}
               >
-                {index === 1 && (
-                  <div className="absolute left-0 top-0 h-full w-px bg-white/30">
-                    <div
-                      className={`absolute top-0 left-0 w-px bg-blue-400 divider-charge ${
-                        active ? "active" : ""
-                      }`}
-                    />
+                <div className="relative  border border-[#7C4DFF]/20 rounded-2xl p-8 hover:border-[#7C4DFF]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7C4DFF]/20 hover:-translate-y-2">
+                  {/* ICON WITH linear BACKGROUND */}
+                  <div className="w-16 h-16 bg-[#7C4DFF] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="w-8 h-8 text-white" />
                   </div>
-                )}
 
-                <Icon className="w-10 h-10 mb-6 text-blue-600" />
+                  {/* TITLE */}
+                  <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#9D7CFF] transition-colors">
+                    {item.title}
+                  </h3>
 
-                <h3 className="text-lg font-semibold leading-snug mb-3 max-w-xs text-blue-500">
-                  {item.title}
-                </h3>
+                  {/* DESCRIPTION */}
+                  {item.desc && (
+                    <ul className="space-y-2 text-gray-300">
+                      {item.desc.map((d, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="text-[#7C4DFF] mt-1">•</span>
+                          <span className="text-sm">{d}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
 
-                {item.desc && (
-                  <ul className="text-white space-y-1 text-sm">
-                    {item.desc.map((d, i) => (
-                      <li key={i}>{d}</li>
-                    ))}
-                  </ul>
-                )}
-
-                {item.learnMore && (
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-1 text-white mt-4 hover:text-blue-300 transition text-sm"
-                  >
-                    En savoir plus <span className="text-lg">›</span>
-                  </a>
-                )}
+                  {/* LEARN MORE LINK */}
+                  {item.learnMore && (
+                    <a
+                      href="#"
+                      className="inline-flex items-center gap-2 text-[#7C4DFF] hover:text-[#9D7CFF] mt-6 font-medium transition group/link"
+                    >
+                      En savoir plus 
+                      <span className="group-hover/link:translate-x-1 transition-transform">→</span>
+                    </a>
+                  )}
+                </div>
               </div>
             );
           })}
         </div>
 
-        <div className="my-16 h-px bg-blue-500" />
-
-        <div className="flex items-center gap-14 flex-wrap">
-          {payments.map((p, i) => (
-            <div
-              key={i}
-              style={{ transitionDelay: `${i * 90}ms` }}
-              className={`payment-wave ${active ? "active" : ""}`}
-            >
-              <img src={p.src} alt={p.name} className="h-16 object-contain" />
-            </div>
-          ))}
+        {/* PAYMENT METHODS */}
+        <div className={`backdrop-blur-sm  p-8 md:p-12 mb-12 ${active ? 'fade-in' : ''}`} style={{ animationDelay: '600ms' }}>
+          <h3 className="text-2xl font-bold mb-8 text-center">Méthodes de paiement acceptées</h3>
+          
+          <div className="flex items-center justify-center gap-8 flex-wrap">
+            {payments.map((p, i) => (
+              <div
+                key={i}
+                style={{ transitionDelay: `${700 + i * 80}ms` }}
+                className={`payment-logo ${active ? "active" : ""} bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-[#7C4DFF]/50 hover:scale-110 transition-all duration-300`}
+              >
+                <img 
+                  src={p.src} 
+                  alt={p.name} 
+                  className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" 
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="my-16 h-px bg-blue-500" />
-
-        <button
-          className={`rounded-full cursor-pointer text-white shadow-[0_0_18px_rgba(59,130,246,0.45)] bg-blue-600 hover:text-white hover:bg-black/40 hover:scale-105 transition-all duration-300
-           px-8 py-3 text-base font-semibold cta-lock ${
-            active ? "active" : ""
-          }`}
-        >
-          Ouvrir un compte
-        </button>
+        {/* CTA BUTTON */}
+        <div className="flex justify-center ">
+          <button
+            className={`relative overflow-hidden hover:cursor-pointer group px-8 py-2 bg-[#7C4DFF] rounded-full text-lg font-bold text-white shadow-lg hover:shadow-2xl hover:shadow-[#7C4DFF]/50 transition-all duration-300 hover:scale-105 ${active ? 'fade-in' : ''}`}
+            style={{ animationDelay: '900ms' }}
+          >
+            <span className="relative z-10">Ouvrir un compte</span>
+            <div className="absolute inset-0  opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </button>
+        </div>
       </div>
     </section>
   );

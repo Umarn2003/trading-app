@@ -127,7 +127,7 @@ export default function HeroSection() {
                 }}
               >
                 <Image
-                  src="/mobile.png"
+                  src="/purple 2.png"
                   alt="Pourquoi Nous Choisir"
                   fill
                   className="object-cover rounded-3xl object-center ml-20"
@@ -138,14 +138,14 @@ export default function HeroSection() {
             </div>
 
             {/* Text Content */}
-            <div className="relative bg-blue-500/10 p-8 rounded-2xl shadow-2xl flex flex-col justify-center space-y-8">
-              <h3 className="text-blue-500 bg-clip-text text-sm font-semibold uppercase tracking-wide">
+            <div className="relative bg-[#7C4DFF]/40 p-8 rounded-2xl shadow-2xl flex flex-col justify-center space-y-8">
+              <h3 className="text-[#9D7CFF] bg-clip-text text-sm font-semibold uppercase tracking-wide">
                 Pourquoi Nous Choisir
               </h3>
               <h2 className="text-xl md:text-4xl font-bold leading-snug drop-shadow-lg text-white/90  bg-clip-text">
                 Découvrez le Trading CFD Ultra-Premium
               </h2>
-              <p className="text-white/90 md:text-base text-sm leading-relaxed max-w-md drop-shadow-md">
+              <p className="text-white/70 md:text-base text-sm leading-relaxed max-w-md drop-shadow-md">
                 Trade001 combine vitesse, sécurité et technologie avancée pour
                 autonomiser les traders à tous les niveaux. Notre plateforme
                 offre une expérience transparente et intuitive sur les marchés
@@ -159,7 +159,7 @@ export default function HeroSection() {
                     className="flex items-start gap-4 p-4 rounded-xl group bg-blue-900/5 backdrop-blur-sm hover:bg-blue-900/10 hover:translate-x-2 hover:scale-105 transition-all duration-500"
                   >
                     <div>
-                      <h4 className="text-blue-500 font-semibold group-hover:text-white/70 transition-colors">
+                      <h4 className="text-[#9D7CFF] font-semibold group-hover:text-white/70 transition-colors">
                         {feature.title}
                       </h4>
                       <p className="text-white text-sm">

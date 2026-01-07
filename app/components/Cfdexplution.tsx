@@ -53,10 +53,14 @@ export default function Timeline() {
         </svg>
 
         <div className="text-center max-w-3xl mx-auto mb-28">
-          <h2 className="text-2xl md:text-5xl text-white/80 font-semibold mb-4">
-            Explication CFD
-          </h2>
-          <p className="text-blue-500 text-lg">
+          <div className="w-fit mx-auto">
+            <h2 className="text-2xl md:text-5xl text-white font-semibold mb-4">
+              Explication CFD
+            </h2>
+            <div className="h-1 w-3/5 bg-[#9D7CFF]/20 mb-6 mx-auto" />
+          </div>
+
+          <p className="text-[#7C4DFF] text-lg">
             Suivez un processus d'intégration simple et commencez à trader
             rapidement.
           </p>
@@ -78,14 +82,16 @@ export default function Timeline() {
                 key={i}
                 className={`flex flex-col items-center text-center transition-all duration-700
                 ${offsets[i]}
-                ${show ? "opacity-100 translate-x-0" : "opacity-0 translate-y-6"}
+                ${
+                  show ? "opacity-100 translate-x-0" : "opacity-0 translate-y-6"
+                }
                 `}
               >
-                <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center mb-6 shadow-sm">
+                <div className="w-16 h-16 rounded-2xl bg-[#7C4DFF] flex items-center justify-center mb-6 shadow-sm">
                   <Icon className="w-7 h-7 text-white" />
                 </div>
 
-                <h3 className="text-xl font-bold text-blue-500 mb-3">
+                <h3 className="text-xl font-bold text-[#7C4DFF] mb-3">
                   {step.title}
                 </h3>
 

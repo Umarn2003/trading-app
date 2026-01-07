@@ -16,7 +16,7 @@ export default function SMSFPage() {
 
         {/* What is SMSF */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             What Is a Self-Managed Superannuation Fund (SMSF)?
           </h2>
 
@@ -32,7 +32,7 @@ export default function SMSFPage() {
 
         {/* Steps */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-6 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-6 text-[#7C4DFF]">
             Steps to Set Up and Manage an SMSF for Bitcoin
           </h2>
 
@@ -88,7 +88,7 @@ export default function SMSFPage() {
 
         {/* Timeframe */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             Timeframe for Setup
           </h2>
 
@@ -103,7 +103,7 @@ export default function SMSFPage() {
 
         {/* Sole Purpose Test */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             Understanding the Sole Purpose Test
           </h2>
 
@@ -119,7 +119,7 @@ export default function SMSFPage() {
 
         {/* Help */}
         <div className="border-t border-white/10 pt-6">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             Need Help?
           </h2>
 

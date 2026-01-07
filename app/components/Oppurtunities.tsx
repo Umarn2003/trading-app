@@ -92,10 +92,16 @@ export const Oppurtunities: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="mb-16 text-center">
-          <p className="text-2xl md:text-5xl font-bold text-white bg-clip-text mb-4">
+          <div  className="w-fit mx-auto">
+          <p className="text-2xl md:text-5xl font-bold text-white bg-clip-text">
             Nos Opportunités
           </p>
-          <h2 className="text-lg text-blue-500">
+          
+          <div
+            className={`mx-auto mt-4 w-3/5 h-1 bg-[#7C4DFF]/40 transition-all duration-1000 `}
+          />
+          </div>
+          <h2 className="text-lg text-[#7C4DFF] mt-6">
             Courtier CFD et Forex de premier plan pour traders professionnels
           </h2>
         </div>
@@ -104,7 +110,7 @@ export const Oppurtunities: React.FC = () => {
           {/* IMAGE */}
           <div className="relative h-[60vh]">
             <img
-              src="/falt.png"
+              src="/purple.png"
               alt="image de trading forex"
               className="relative w-full h-full object-cover rounded-lg shadow-lg animate-image-slide"
             />
@@ -122,7 +128,7 @@ export const Oppurtunities: React.FC = () => {
                     itemsRef.current[i] = el;
                   }}
                   style={{ transitionDelay: `${i * 120}ms` }}
-                  className={`border-t border-blue-500 pt-6 cursor-pointer group
+                  className={`border-t border-[#7C4DFF] pt-6 cursor-pointer group
                     transition-all duration-700 ease-out transform
                     ${
                       isVisible
@@ -139,8 +145,8 @@ export const Oppurtunities: React.FC = () => {
                 >
                   <div className="flex justify-between mb-4">
                     <div className="flex gap-4">
-                      <span className="text-white/80">{service.number}</span>
-                      <h3 className="text-xl font-semibold text-white">
+                      <span className="text-[#7C4DFF]">{service.number}</span>
+                      <h3 className="text-xl font-semibold text-[#7C4DFF]">
                         {service.title}
                       </h3>
                     </div>

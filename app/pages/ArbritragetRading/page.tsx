@@ -16,7 +16,7 @@ export default function ArbitragePage() {
 
         {/* What is Arbitrage */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             What Is Arbitrage in the Crypto Market?
           </h2>
 
@@ -31,7 +31,7 @@ export default function ArbitragePage() {
 
         {/* How it works */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             How Does Crypto Arbitrage Work?
           </h2>
 
@@ -46,7 +46,7 @@ export default function ArbitragePage() {
 
         {/* Our approach */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             Our Approach to Crypto Arbitrage
           </h2>
 
@@ -74,7 +74,7 @@ export default function ArbitragePage() {
 
         {/* Benefits */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-blue-500 mb-4">
+          <h2 className="text-2xl font-semibold text-[#7C4DFF] mb-4">
             Benefits of Crypto Arbitrage
           </h2>
 
@@ -87,7 +87,7 @@ export default function ArbitragePage() {
 
         {/* Challenges */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             Challenges and Risk Considerations
           </h2>
 
@@ -109,7 +109,7 @@ export default function ArbitragePage() {
 
         {/* Why choose us */}
         <section className="border-t border-white/10 pt-6">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+          <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
             Why Choose Trade001?
           </h2>
 

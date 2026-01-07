@@ -48,11 +48,13 @@ export default function TradingOfferLayered() {
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-40"
         }`}
       >
-        <h2 className="text-2xl md:text-5xl font-semibold text-white/80 mb-4">
+        <div className="w-fit mx-auto">
+        <h2 className="text-2xl md:text-5xl font-semibold text-white mb-4">
           Offres de Trading
         </h2>
-        <div className="h-1 w-40 bg-blue-500/40 mb-6 mx-auto" />
-        <p className="text-blue-500 text-lg leading-relaxed">
+        <div className="h-1 w-3/5 bg-[#7C4DFF]/40 mb-6 mx-auto" />
+        </div>
+        <p className="text-[#7C4DFF] text-lg leading-relaxed">
           Survolez l'offre pour explorer nos opportunités de trading premium
           dans le Forex, Crypto, Indices et ETFs.
         </p>
@@ -61,7 +63,7 @@ export default function TradingOfferLayered() {
       {/* Image slides from right with 3D parallax */}
       <div
         ref={imageRef}
-        className="relative max-w-5xl h-64 md:h-80 transition-transform duration-700"
+        className="relative max-w-7xl h-64 md:h-80 transition-transform duration-700"
       >
         {/* Glow & Depth */}
         <div
@@ -69,7 +71,7 @@ export default function TradingOfferLayered() {
           style={{
             background: `radial-gradient(circle at ${mousePos.x * 100}% ${
               mousePos.y * 100
-            }%, rgba(59,130,246,0.3), transparent 50%)`,
+            }%, #9D7CFF, transparent 20%)`,
           }}
         />
 
@@ -85,15 +87,15 @@ export default function TradingOfferLayered() {
         {isVisible && (
           <>
             <div
-              className="absolute w-2 h-2 bg-blue-500 rounded-full blur-sm animate-float1"
+              className="absolute w-2 h-2 bg-[#7C4DFF] rounded-full blur-sm animate-float1"
               style={{ top: "10%", left: "15%" }}
             />
             <div
-              className="absolute w-3 h-3 bg-blue-500 rounded-full blur-sm animate-float2"
+              className="absolute w-3 h-3 bg-[#7C4DFF] rounded-full blur-sm animate-float2"
               style={{ top: "70%", right: "20%" }}
             />
             <div
-              className="absolute w-2 h-2 bg-blue-500 rounded-full blur-sm animate-float3"
+              className="absolute w-2 h-2 bg-[#7C4DFF] rounded-full blur-sm animate-float3"
               style={{ bottom: "15%", left: "25%" }}
             />
           </>
