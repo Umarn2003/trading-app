@@ -44,7 +44,9 @@ export default function BenefitsSection() {
     },
   ];
 
-  const cardsRef = useRef<(HTMLDivElement | null)[]>(new Array(benefits.length).fill(null));
+  const cardsRef = useRef<(HTMLDivElement | null)[]>(
+    new Array(benefits.length).fill(null)
+  );
   const [visibleCards, setVisibleCards] = useState<number[]>([]);
 
   useEffect(() => {
@@ -145,14 +147,17 @@ export default function BenefitsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* LEFT SIDEBAR */}
           <div className="lg:col-span-4">
-            <div className="sticky top-24 bg-linear-to-br from-[#1a1a3e]/80 to-[#0f0f2a]/80 backdrop-blur-xl border border-[#7C4DFF]/30 rounded-3xl p-8 slide-in-left">
+            <div className="sticky top-24 bg-linear-to-br from-[#080024] to-[#0c0038] backdrop-blur-xl border border-[#7C4DFF]/30 rounded-3xl p-8 slide-in-left">
               {/* DECORATIVE ELEMENT */}
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-linear-to-br from-[#7C4DFF] to-[#9D7CFF] rounded-full opacity-20 blur-2xl"></div>
-              
+
               <div className="relative">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-                  Points<br />
-                  <span className="text-transparent bg-clip-text bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF]">Clés</span>
+                  Points
+                  <br />
+                  <span className="text-transparent bg-clip-text bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF]">
+                    Clés
+                  </span>
                 </h3>
 
                 <p className="text-gray-300 text-lg mb-8 leading-relaxed">
@@ -165,11 +170,13 @@ export default function BenefitsSection() {
                     "Commissions faibles",
                     "Spreads bruts",
                     "Meilleurs forfaits",
-                    "Abordable"
+                    "Abordable",
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 group">
                       <div className="w-2 h-2 rounded-full bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF] group-hover:scale-150 transition-transform"></div>
-                      <p className="text-gray-300 group-hover:text-white group-hover:translate-x-2 transition-all">{item}</p>
+                      <p className="text-gray-300 group-hover:text-white group-hover:translate-x-2 transition-all">
+                        {item}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -190,16 +197,22 @@ export default function BenefitsSection() {
                 return (
                   <div
                     key={i}
-                    ref={(el) => { cardsRef.current[i] = el; }}
+                    ref={(el) => {
+                      cardsRef.current[i] = el;
+                    }}
                     data-index={i}
-                    style={{ 
+                    style={{
                       transitionDelay: `${i * 100}ms`,
-                      animationDelay: `${i * 0.5}s`
+                      animationDelay: `${i * 0.5}s`,
                     }}
                     className={`transform transition-all duration-700 ease-out
-                      ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-14"}`}
+                      ${
+                        isVisible
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 translate-y-14"
+                      }`}
                   >
-                    <div className="benefit-card h-full bg-linear-to-br from-[#1a1a3e]/50 to-[#0f0f2a]/50 backdrop-blur-sm border border-[#7C4DFF]/20 rounded-2xl p-6 hover:bg-[#1a1a3e]/70 group">
+                    <div className="benefit-card h-full bg-linear-to-br from-[#080024] to-[#0c0038] backdrop-blur-sm border border-[#7C4DFF]/20 rounded-2xl p-6 hover:bg-[#1a1a3e]/70 group">
                       {/* ICON CONTAINER */}
                       <div className="relative mb-6 inline-block">
                         <div className="relative w-14 h-14 bg-linear-to-br from-[#7C4DFF] to-[#9D7CFF] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform float-animation">

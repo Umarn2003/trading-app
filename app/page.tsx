@@ -138,7 +138,7 @@ export default function HeroSection() {
             </div>
 
             {/* Text Content */}
-            <div className="relative bg-[#7C4DFF]/40 p-8 rounded-2xl shadow-2xl flex flex-col justify-center space-y-8">
+            <div className="relative bg-linear-to-br from-[#080024]/50 to-[#0c0038] border border-[#7C4DFF]/20 p-8 rounded-2xl shadow-2xl flex flex-col justify-center space-y-8">
               <h3 className="text-[#9D7CFF] bg-clip-text text-sm font-semibold uppercase tracking-wide">
                 Pourquoi Nous Choisir
               </h3>

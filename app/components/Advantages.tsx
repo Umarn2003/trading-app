@@ -75,10 +75,10 @@ export default function DesignProcessSection() {
 
         <div className="mt-16 overflow-hidden relative">
           {/* Left Fade */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-17 bg-gradient-to-r from-[#07071b]  via-[#061524]/70 to-transparent z-10" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-17 bg-linear-to-r from-[#07071b]  via-[#061524]/70 to-transparent z-10" />
 
           {/* Right Fade */}
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#07071b]  via-[#061524]/70 to-transparent z-10" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-linear-to-l from-[#07071b]  via-[#061524]/70 to-transparent z-10" />
           <motion.div
             className="flex gap-10 w-max"
             animate={{ x: ["0%", "-50%"] }}
@@ -93,13 +93,13 @@ export default function DesignProcessSection() {
                 key={index}
                 className="
                   min-w-[320px] md:w-120 rounded-2xl p-8
-                  border border-[#7C4DFF] overflow-hidden
+                  border border-[#7C4DFF]/70 overflow-hidden
                   shadow-lg
                   relative
                   "
               >
                 <div className="absolute inset-0 -z-10">
-                  <img src="/bg1.jpeg" alt=""  className="w-full h-full opacity-35"/>
+                  <img src={`/bg${index}.jpeg`} alt=""  className="w-full h-full opacity-20"/>
                 </div>
                 <p className="text-sm opacity-60">
                   {String((index % cards.length) + 1).padStart(2, "0")}

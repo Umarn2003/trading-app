@@ -68,12 +68,12 @@ export default function TakeControlSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-linear-to-br from-[#0a0a1f] via-[#0f0f2a] to-[#07071b] py-24"
+      className="relative overflow-hidden bg-linear-to-br from-[#080024] to-[#0c0038] py-24"
     >
       {/* ANIMATED BACKGROUND ELEMENTS */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-96 h-96 bg-[#7C4DFF] rounded-full opacity-10 blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#9D7CFF] rounded-full opacity-10 blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        {/* <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#9D7CFF] rounded-full opacity-10 blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div> */}
       </div>
 
       {/* UNIQUE LOCAL ANIMATIONS */}
@@ -174,7 +174,7 @@ export default function TakeControlSection() {
                 style={{ transitionDelay: `${index * 150}ms` }}
                 className={`feature-card ${active ? "active" : ""} relative group`}
               >
-                <div className="relative  border border-[#7C4DFF]/20 rounded-2xl p-8 hover:border-[#7C4DFF]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7C4DFF]/20 hover:-translate-y-2">
+                <div className="relative bg-linear-to-br from-[#080024] to-[#0c0038]  border border-[#7C4DFF]/20 rounded-2xl p-8 hover:border-[#7C4DFF]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7C4DFF]/20 hover:-translate-y-2">
                   {/* ICON WITH linear BACKGROUND */}
                   <div className="w-16 h-16 bg-[#7C4DFF] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="w-8 h-8 text-white" />

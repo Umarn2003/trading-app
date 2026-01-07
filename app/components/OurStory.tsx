@@ -115,7 +115,7 @@ export default function OurStory() {
 
         {/* Left Content */}
         <div
-          className={`relative bg-linear-to-br from-[#1a1a3e]/50 to-[#0f0f2a]/50 border border-[#7C4DFF]/20 rounded-4xl p-16 shadow-2xl transform transition-all duration-1000 ease-out rotate-6 ${
+          className={`relative bg-linear-to-br from-[#080024] to-[#0c0038] border border-[#7C4DFF]/20 rounded-4xl p-16 shadow-2xl transform transition-all duration-1000 ease-out rotate-6 ${
             isVisible ? "opacity-100 translate-x-0 scale-100" : "opacity-0 -translate-x-32 scale-95"
           }`}
           style={{
@@ -148,7 +148,7 @@ export default function OurStory() {
 
         {/* Right Content (TradingView Widget) */}
         <div
-          className={`absolute top-60 right-12 w-100 h-112 bg-white/90 rounded-2xl shadow-2xl z-20 overflow-hidden transition-all duration-1000 ease-out ${
+          className={`absolute top-80 right-12 w-100 h-112 bg-white/90 rounded-2xl shadow-2xl z-20 overflow-hidden transition-all duration-1000 ease-out ${
             isVisible ? "opacity-100 translate-x-0 scale-100 rotate-0" : "opacity-0 translate-x-32 scale-95 rotate-3"
           }`}
           style={{
