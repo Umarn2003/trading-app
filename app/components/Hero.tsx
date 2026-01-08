@@ -7,15 +7,14 @@ export default function Hero() {
     <section className="relative min-h-screen overflow-hidden text-white justify-center">
       {/* Background Image */}
       <Image
-        src="/bg5.jpeg"
+        src="/herobg.jpg"
         alt="Arrière-plan éclair"
         fill
-        className="object-coverc:\Users\links\Downloads\purple 2.png c:\Users\links\Downloads\purple imagem 1.png opacity-70"
+        className="object-coverc:\Users\links\Downloads\purple 2.png c:\Users\links\Downloads\purple imagem 1.png opacity-60"
       />
-      <div className="absolute inset-0 bg-black/50"/>
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 sm:pt-24 lg:pt-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-25">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Side */}
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight text-white mt-30">
