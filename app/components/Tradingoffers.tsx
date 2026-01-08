@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export default function TradingOfferLayered() {
@@ -40,16 +41,22 @@ export default function TradingOfferLayered() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#07071b]  py-16 px-6 flex flex-col items-center overflow-hidden gap-10"
+      className="relative bg-[#07071b] h-screen  py-16 px-6 flex flex-col items-center overflow-hidden gap-10"
     >
+       <Image
+              src="/bg2.jpeg"
+              alt="Arrière-plan éclair"
+              fill
+              className="object-left opacity-20"
+            />
       {/* Heading slides from left */}
       <div
         className={`max-w-xl text-center transition-all duration-1000 ease-out ${
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-40"
         }`}
       >
-        <div className="w-fit mx-auto">
-        <h2 className="text-2xl md:text-5xl font-semibold text-white mb-4">
+        <div className="w-fit mx-auto text-center">
+        <h2 className="text-2xl md:text-5xl font-semibold text-white mb-4 pt-36">
           Offres de Trading
         </h2>
         <div className="h-1 w-3/5 bg-[#7C4DFF]/40 mb-6 mx-auto" />

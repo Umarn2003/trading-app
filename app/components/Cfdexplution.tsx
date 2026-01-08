@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FileText, ShieldCheck, BarChart3, TrendingUp } from "lucide-react";
+import Image from "next/image";
 
 const icons = [FileText, ShieldCheck, BarChart3, TrendingUp];
 
@@ -37,6 +38,12 @@ export default function Timeline() {
 
   return (
     <section className="bg-[#07071b] py-32 overflow-hidden">
+      <Image
+                    src="/bg6.jpeg"
+                    alt="Arrière-plan éclair"
+                    fill
+                    className=" object-cover opacity-20"
+                  />
       <div className="max-w-7xl mx-auto px-6 relative">
         {/* Dashed timeline line */}
         <svg
@@ -46,7 +53,7 @@ export default function Timeline() {
         >
           <path
             d="M40 120 C300 20, 600 220, 860 120 C1000 40, 1100 140, 1180 120"
-            stroke="#3B82F6"
+            stroke="white"
             strokeWidth="1"
             strokeDasharray="4 10"
           />
@@ -87,8 +94,8 @@ export default function Timeline() {
                 }
                 `}
               >
-                <div className="w-16 h-16 rounded-2xl bg-[#7C4DFF] flex items-center justify-center mb-6 shadow-sm">
-                  <Icon className="w-7 h-7 text-white" />
+                <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-6 shadow-sm">
+                  <Icon className="w-7 h-7 text-[#7C4DFF]" />
                 </div>
 
                 <h3 className="text-xl font-bold text-[#7C4DFF] mb-3">

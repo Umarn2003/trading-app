@@ -11,7 +11,6 @@ export const Oppurtunities: React.FC = () => {
   const services = [
     {
       id: 1,
-      number: "01",
       title: "Trading Forex",
       image: "/forextrading.png",
       description:
@@ -19,7 +18,6 @@ export const Oppurtunities: React.FC = () => {
     },
     {
       id: 2,
-      number: "02",
       title: "Trading Crypto",
       image: "/cryptotrading.png",
       description:
@@ -27,7 +25,6 @@ export const Oppurtunities: React.FC = () => {
     },
     {
       id: 3,
-      number: "03",
       title: "Trading d'Indices",
       image: "/stockmarket.png",
       description:
@@ -35,7 +32,6 @@ export const Oppurtunities: React.FC = () => {
     },
     {
       id: 4,
-      number: "04",
       title: "Trading d'ETFs",
       image: "/comodities.png",
       description:
@@ -145,7 +141,6 @@ export const Oppurtunities: React.FC = () => {
                 >
                   <div className="flex justify-between mb-4">
                     <div className="flex gap-4">
-                      <span className="text-[#7C4DFF]">{service.number}</span>
                       <h3 className="text-xl font-semibold text-[#7C4DFF]">
                         {service.title}
                       </h3>

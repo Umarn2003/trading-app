@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { CreditCard, Timer, Wallet } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
@@ -68,13 +69,17 @@ export default function TakeControlSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-linear-to-br from-[#080024] to-[#0c0038] py-24"
+      className="relative overflow-hidden  py-24"
     >
-      {/* ANIMATED BACKGROUND ELEMENTS */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-[#7C4DFF] rounded-full opacity-10 blur-3xl animate-pulse"></div>
-        {/* <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#9D7CFF] rounded-full opacity-10 blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div> */}
-      </div>
+        <Image
+          src="/depositbg.jpeg"
+          alt="Hero Background"
+          fill
+          priority
+          className="object-cover opacity-20"
+        />
+
+     
 
       {/* UNIQUE LOCAL ANIMATIONS */}
       <style>{`
@@ -176,12 +181,12 @@ export default function TakeControlSection() {
               >
                 <div className="relative bg-linear-to-br from-[#080024] to-[#0c0038]  border border-[#7C4DFF]/20 rounded-2xl p-8 hover:border-[#7C4DFF]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7C4DFF]/20 hover:-translate-y-2">
                   {/* ICON WITH linear BACKGROUND */}
-                  <div className="w-16 h-16 bg-[#7C4DFF] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="w-8 h-8 text-[#7C4DFF]" />
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#9D7CFF] transition-colors">
+                  <h3 className="text-xl font-bold mb-4 text-[#7C4DFF] group-hover:text-[#9D7CFF] transition-colors">
                     {item.title}
                   </h3>
 

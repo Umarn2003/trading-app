@@ -9,6 +9,7 @@ import {
   Globe,
   HandFist,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function BenefitsSection() {
   const benefits = [
@@ -72,6 +73,14 @@ export default function BenefitsSection() {
 
   return (
     <section className="relative bg-linear-to-b from-[#07071b] via-[#0a0a20] to-[#07071b] py-24 overflow-hidden">
+  <Image
+    src="/cfd.jpeg"
+    alt="Hero Background"
+    fill
+    priority
+    className="object-cover opacity-20"
+  />
+
       {/* ANIMATED BACKGROUND */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-20 w-96 h-96 bg-[#7C4DFF] rounded-full opacity-5 blur-3xl"></div>
@@ -215,8 +224,8 @@ export default function BenefitsSection() {
                     <div className="benefit-card h-full bg-linear-to-br from-[#080024] to-[#0c0038] backdrop-blur-sm border border-[#7C4DFF]/20 rounded-2xl p-6 hover:bg-[#1a1a3e]/70 group">
                       {/* ICON CONTAINER */}
                       <div className="relative mb-6 inline-block">
-                        <div className="relative w-14 h-14 bg-linear-to-br from-[#7C4DFF] to-[#9D7CFF] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform float-animation">
-                          <Icon className="w-7 h-7 text-white" />
+                        <div className="relative w-14 h-14 bg-white rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform float-animation">
+                          <Icon className="w-7 h-7 text-[#7C4DFF]" />
                         </div>
                       </div>
 

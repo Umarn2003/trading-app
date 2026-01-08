@@ -7,10 +7,10 @@ export default function Hero() {
     <section className="relative min-h-screen overflow-hidden text-white">
       {/* Background Image */}
       <Image
-        src="/bg5.jpeg"
+        src="/Herobg.jpeg"
         alt="Arrière-plan éclair"
         fill
-        className="object-left opacity-70"
+        className="object-left opacity-50"
       />
       <div className="absolute inset-0 bg-black/50"/>
       {/* Content */}

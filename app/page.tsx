@@ -110,6 +110,12 @@ export default function HeroSection() {
       </FadeSlideInn>
 
       <FadeSlideInn>
+        <div id="deposit">
+          <DepositSection />
+        </div>
+      </FadeSlideInn>
+
+      <FadeSlideInn>
         <section className="relative bg-[#07071b]  overflow-hidden py-32 px-6 md:px-10">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center relative z-10">
             {/* Interactive Image */}
@@ -174,11 +180,6 @@ export default function HeroSection() {
         </section>
       </FadeSlideInn>
 
-      <FadeSlideInn>
-        <div id="deposit">
-          <DepositSection />
-        </div>
-      </FadeSlideInn>
 
       <FadeSlideInn>
         <div>
