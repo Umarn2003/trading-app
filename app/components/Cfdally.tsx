@@ -74,7 +74,7 @@ export default function BenefitsSection() {
   return (
     <section className="relative bg-linear-to-b from-[#07071b] via-[#0a0a20] to-[#07071b] py-24 overflow-hidden">
   <Image
-    src="/cfd.jpeg"
+    src="/cfdfinal.png"
     alt="Hero Background"
     fill
     priority

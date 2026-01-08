@@ -44,7 +44,7 @@ export default function TradingOfferLayered() {
       className="relative bg-[#07071b] h-screen  py-16 px-6 flex flex-col items-center overflow-hidden gap-10"
     >
        <Image
-              src="/bg2.jpeg"
+              src="/tradingoffers.png"
               alt="Arrière-plan éclair"
               fill
               className="object-left opacity-20"

@@ -76,7 +76,7 @@ export default function TakeControlSection() {
           alt="Hero Background"
           fill
           priority
-          className="object-cover opacity-20"
+          className="object-cover opacity-10"
         />
 
      
