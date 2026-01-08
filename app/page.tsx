@@ -136,7 +136,7 @@ export default function HeroSection() {
                   src="/mobile.png"
                   alt="Pourquoi Nous Choisir"
                   fill
-                  className="object-cover rounded-3xl object-center ml-20"
+                  className="object-contain rounded-3xl object-center ml-20"
                 />
                 {/* Blue overlay gradient */}
                 <div className="absolute inset-0  animate-gradient-x"></div>
