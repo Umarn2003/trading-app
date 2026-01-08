@@ -35,7 +35,7 @@ export default function Footer() {
             <Link
               key={i}
               href={item.href}
-              className="relative text-white/70 transition-all duration-300 hover:text-white"
+              className="relative text-white/70 transition-all duration-300 hover:text-[#7C4DFF]"
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-gradient-to-r from-[#7C4DFF] to-[#9D7CFF] transition-all duration-300 group-hover:w-full" />
