@@ -133,7 +133,7 @@ export default function HeroSection() {
                 }}
               >
                 <Image
-                  src="/purple 2.png"
+                  src="/mobile.png"
                   alt="Pourquoi Nous Choisir"
                   fill
                   className="object-cover rounded-3xl object-center ml-20"
