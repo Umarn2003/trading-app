@@ -11,7 +11,7 @@ export default function useInViewAnimation() {
         setInView(entry.isIntersecting);
       },
       {
-        threshold: 0.2, // element becomes visible at 20%
+        threshold: 0.2, 
       }
     );
 

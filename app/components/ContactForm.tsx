@@ -25,7 +25,6 @@ export const ContactForm = () => {
 
   return (
     <section className="min-h-screen bg-[#07071b] flex flex-col md:flex-row">
-      {/* LEFT PANEL */}
       <div className="md:w-2/5 p-10 md:p-16 text-white flex flex-col justify-center relative overflow-hidden">
         <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full blur-3xl" />
 
@@ -88,7 +87,6 @@ export const ContactForm = () => {
         </div>
       </div>
 
-      {/* RIGHT PANEL - FORM */}
       <div className="md:w-3/5 p-6 md:p-12 flex items-center justify-center">
         <form
           onSubmit={handleSubmit}

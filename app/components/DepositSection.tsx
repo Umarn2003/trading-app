@@ -81,7 +81,6 @@ export default function TakeControlSection() {
 
      
 
-      {/* UNIQUE LOCAL ANIMATIONS */}
       <style>{`
         @keyframes slideUp {
           from {
@@ -159,7 +158,6 @@ export default function TakeControlSection() {
       `}</style>
 
       <div className="relative max-w-7xl mx-auto px-6 text-white z-10">
-        {/* HEADER */}
         <div className={`mb-16 ${active ? 'slide-up' : ''}`}>
           <h2 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
             Prenez le <span className="text-transparent bg-clip-text bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF]">contrôle de</span>
@@ -169,7 +167,6 @@ export default function TakeControlSection() {
           <div className="w-24 h-1 bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF] rounded-full mt-4"></div>
         </div>
 
-        {/* FEATURES GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {features.map((item, index) => {
             const Icon = item.icon;
@@ -180,17 +177,14 @@ export default function TakeControlSection() {
                 className={`feature-card ${active ? "active" : ""} relative group`}
               >
                 <div className="relative bg-linear-to-br from-[#080024] to-[#0c0038]  border border-[#7C4DFF]/20 rounded-2xl p-8 hover:border-[#7C4DFF]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7C4DFF]/20 hover:-translate-y-2">
-                  {/* ICON WITH linear BACKGROUND */}
                   <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="w-8 h-8 text-[#7C4DFF]" />
                   </div>
 
-                  {/* TITLE */}
                   <h3 className="text-xl font-bold mb-4 text-[#7C4DFF] group-hover:text-[#9D7CFF] transition-colors">
                     {item.title}
                   </h3>
 
-                  {/* DESCRIPTION */}
                   {item.desc && (
                     <ul className="space-y-2 text-gray-300">
                       {item.desc.map((d, i) => (
@@ -202,7 +196,6 @@ export default function TakeControlSection() {
                     </ul>
                   )}
 
-                  {/* LEARN MORE LINK */}
                   {item.learnMore && (
                     <a
                       href="#"
@@ -218,7 +211,6 @@ export default function TakeControlSection() {
           })}
         </div>
 
-        {/* PAYMENT METHODS */}
         <div className={`backdrop-blur-sm  p-8 md:p-12 mb-12 ${active ? 'fade-in' : ''}`} style={{ animationDelay: '600ms' }}>
           <h3 className="text-2xl font-bold mb-8 text-center">Méthodes de paiement acceptées</h3>
           
@@ -239,7 +231,6 @@ export default function TakeControlSection() {
           </div>
         </div>
 
-        {/* CTA BUTTON */}
         <div className="flex justify-center ">
           <button
             className={`relative overflow-hidden hover:cursor-pointer group px-8 py-2 bg-[#7C4DFF] rounded-full text-lg font-bold text-white shadow-lg hover:shadow-2xl hover:shadow-[#7C4DFF]/50 transition-all duration-300 hover:scale-105 ${active ? 'fade-in' : ''}`}

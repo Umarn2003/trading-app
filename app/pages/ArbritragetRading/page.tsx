@@ -1,73 +1,72 @@
 export default function ArbitragePage() {
   return (
-    <main className="min-h-screen bg-[#05101b]  text-white px-6 py-16">
+    <main className="min-h-screen bg-linear-to-br from-[#080024] to-[#0c0038] text-white px-6 py-16">
       <div className="max-w-4xl mx-auto mt-20">
         <h1 className="text-4xl font-bold mb-6 mt-20 text-white/80">
-          Arbitrage Trading
+          Trading d'Arbitrage
         </h1>
 
         <p className="text-white/80 mb-10">
-          Arbitrage trading is a strategy that seeks to benefit from price
-          differences of the same asset across different markets. In the
-          cryptocurrency space, this involves identifying pricing
-          discrepancies for digital assets such as Bitcoin (BTC), Ethereum
-          (ETH), and other cryptocurrencies across multiple exchanges.
+          Le trading d'arbitrage est une stratégie qui cherche à bénéficier des différences de prix
+          du même actif sur différents marchés. Dans l'espace des cryptomonnaies, cela implique
+          d'identifier les écarts de prix pour les actifs numériques tels que Bitcoin (BTC), Ethereum
+          (ETH), et autres cryptomonnaies sur plusieurs échanges.
         </p>
 
         {/* What is Arbitrage */}
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
-            What Is Arbitrage in the Crypto Market?
+            Qu'est-ce que l'Arbitrage dans le Marché Crypto ?
           </h2>
 
           <p className="text-white/80">
-            Arbitrage in the crypto market involves buying a digital asset on
-            one exchange where the price is lower and selling it on another
-            exchange where the price is higher. These price differences can
-            occur due to variations in supply and demand, trading volume,
-            geographic factors, or exchange fee structures.
+            L'arbitrage dans le marché crypto implique d'acheter un actif numérique sur
+            un échange où le prix est plus bas et de le vendre sur un autre
+            échange où le prix est plus élevé. Ces différences de prix peuvent
+            survenir en raison de variations dans l'offre et la demande, le volume de trading,
+            les facteurs géographiques, ou les structures de frais d'échange.
           </p>
         </section>
 
         {/* How it works */}
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
-            How Does Crypto Arbitrage Work?
+            Comment Fonctionne l'Arbitrage Crypto ?
           </h2>
 
           <p className="text-white/80">
-            Cryptocurrency prices are not always identical across exchanges.
-            When a price gap appears, arbitrage trading attempts to capture
-            that difference by executing coordinated buy and sell orders. All
-            associated costs, including trading, withdrawal, and transfer
-            fees, must be considered before a trade is executed.
+            Les prix des cryptomonnaies ne sont pas toujours identiques sur les échanges.
+            Lorsqu'un écart de prix apparaît, le trading d'arbitrage tente de capturer
+            cette différence en exécutant des ordres d'achat et de vente coordonnés. Tous
+            les coûts associés, y compris les frais de trading, de retrait, et de transfert,
+            doivent être pris en compte avant l'exécution d'un trade.
           </p>
         </section>
 
         {/* Our approach */}
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
-            Our Approach to Crypto Arbitrage
+            Notre Approche de l'Arbitrage Crypto
           </h2>
 
           <p className="text-white/80 mb-4">
-            At Trade001, we operate a dedicated arbitrage division focused
-            exclusively on identifying and executing arbitrage opportunities
-            across global cryptocurrency markets.
+            Chez Trade001, nous opérons une division d'arbitrage dédiée exclusivement
+            à l'identification et à l'exécution d'opportunités d'arbitrage
+            sur les marchés mondiaux des cryptomonnaies.
           </p>
 
           <ul className="list-disc list-inside text-white/70 space-y-2">
             <li>
-              <strong>Global Market Access:</strong> Operational access to a
-              wide range of cryptocurrency exchanges worldwide.
+              <strong>Accès au Marché Mondial :</strong> Accès opérationnel à une
+              large gamme d'échanges de cryptomonnaies dans le monde.
             </li>
             <li>
-              <strong>AI-Driven Analysis:</strong> Advanced systems monitor
-              price data in real time to identify potential opportunities.
+              <strong>Analyse Alimentée par IA :</strong> Systèmes avancés surveillent
+              les données de prix en temps réel pour identifier les opportunités potentielles.
             </li>
             <li>
-              <strong>Automated Execution:</strong> Trades are executed through
-              automated processes to ensure speed and accuracy.
+              <strong>Exécution Automatisée :</strong> Les trades sont exécutés via
+              des processus automatisés pour assurer la vitesse et la précision.
             </li>
           </ul>
         </section>
@@ -75,49 +74,48 @@ export default function ArbitragePage() {
         {/* Benefits */}
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-[#7C4DFF] mb-4">
-            Benefits of Crypto Arbitrage
+            Avantages de l'Arbitrage Crypto
           </h2>
 
           <ul className="list-disc list-inside text-white/70 space-y-2">
-            <li>Relies on existing market price differences rather than speculation</li>
-            <li>Operates within a global market available 24/7</li>
-            <li>Systematic and rule-based execution</li>
+            <li>S'appuie sur les différences de prix existantes du marché plutôt que sur la spéculation</li>
+            <li>Opère sur un marché mondial disponible 24/7</li>
+            <li>Exécution systématique et basée sur des règles</li>
           </ul>
         </section>
 
         {/* Challenges */}
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
-            Challenges and Risk Considerations
+            Défis et Considérations de Risque
           </h2>
 
           <ul className="list-disc list-inside text-white/70 space-y-2">
             <li>
-              <strong>Fees:</strong> Trading and transfer fees can impact net
-              outcomes if not carefully evaluated.
+              <strong>Frais :</strong> Les frais de trading et de transfert peuvent impacter les
+              résultats nets s'ils ne sont pas soigneusement évalués.
             </li>
             <li>
-              <strong>Speed:</strong> Market inefficiencies may exist only
-              briefly, requiring rapid execution.
+              <strong>Vitesse :</strong> Les inefficacités du marché peuvent exister seulement
+              brièvement, nécessitant une exécution rapide.
             </li>
             <li>
-              <strong>Regulatory Environment:</strong> Cryptocurrency markets
-              are subject to regulatory requirements that vary by jurisdiction.
+              <strong>Environnement Réglementaire :</strong> Les marchés de cryptomonnaies
+              sont soumis à des exigences réglementaires qui varient selon la juridiction.
             </li>
           </ul>
         </section>
 
-        {/* Why choose us */}
         <section className="border-t border-white/10 pt-6">
           <h2 className="text-2xl font-semibold mb-4 text-[#7C4DFF]">
-            Why Choose Trade001?
+            Pourquoi Choisir Trade001 ?
           </h2>
 
           <p className="text-white/80">
-            With a specialized arbitrage team, technology-driven systems, and
-            access to global cryptocurrency exchanges, Trade001 provides a
-            structured and disciplined approach to arbitrage trading. Our focus
-            is on efficiency, transparency, and responsible execution.
+            Avec une équipe d'arbitrage spécialisée, des systèmes technologiques, et
+            un accès aux échanges mondiaux de cryptomonnaies, Trade001 offre une
+            approche structurée et disciplinée du trading d'arbitrage. Notre focus
+            est sur l'efficacité, la transparence, et l'exécution responsable.
           </p>
         </section>
       </div>

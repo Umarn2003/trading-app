@@ -5,17 +5,14 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden text-white justify-center">
-      {/* Background Image */}
       <Image
         src="/herobg.jpg"
         alt="Arrière-plan éclair"
         fill
         className="object-coverc:\Users\links\Downloads\purple 2.png c:\Users\links\Downloads\purple imagem 1.png opacity-60"
       />
-      {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 sm:pt-24 lg:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left Side */}
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight text-white mt-30">
               Les marchés évoluent rapidement. Vous aussi.
@@ -35,13 +32,10 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Side (optional image/illustration) */}
           <div className="hidden lg:block">
-            {/* Add hero illustration here if needed */}
           </div>
         </div>
 
-        {/* Stats */}
         <div className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-8 text-sm md:text-lg text-white/80 mt-10 sm:mt-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center border-r-0 sm:border-r-2 border-white/30 pr-0 sm:pr-4 gap-2">
             <p className="font-bold text-[#7C4DFF]">32 Million +</p>

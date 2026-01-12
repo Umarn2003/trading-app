@@ -45,7 +45,6 @@ export default function Timeline() {
                     className=" object-cover opacity-20"
                   />
       <div className="max-w-7xl mx-auto px-6 relative">
-        {/* Dashed timeline line */}
         <svg
           className="absolute top-40 left-1/2 -translate-x-1/2 w-[90%] hidden lg:block"
           viewBox="0 0 1200 240"

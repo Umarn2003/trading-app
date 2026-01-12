@@ -86,7 +86,6 @@ export const Oppurtunities: React.FC = () => {
       `}</style>
 
       <div className="max-w-7xl mx-auto">
-        {/* HEADER */}
         <div className="mb-16 text-center">
           <div  className="w-fit mx-auto">
           <p className="text-2xl md:text-5xl font-bold text-white bg-clip-text">
@@ -103,7 +102,6 @@ export const Oppurtunities: React.FC = () => {
         </div>
 
         <div className="flex gap-12 items-start justify-center flex-col relative">
-          {/* IMAGE */}
           <div className="relative h-[60vh]">
             <img
               src="/purple.png"
@@ -112,7 +110,6 @@ export const Oppurtunities: React.FC = () => {
             />
           </div>
 
-          {/* LEFT LIST */}
           <div className="space-y-10 p-5 absolute w-1/3">
             {services.map((service, i) => {
               const isVisible = visibleItems.includes(i);

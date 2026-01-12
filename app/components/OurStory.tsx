@@ -82,7 +82,6 @@ export default function OurStory() {
       ref={sectionRef}
       className="relative bg-[#07071b]   py-32 overflow-hidden"
     >
-      {/* Animated Background Glow */}
       <div className="absolute inset-0 opacity-20">
         <div
           className={`absolute top-1/4 left-1/4 w-96 h-96 bg-purple-400 rounded-full blur-3xl transition-all duration-1000 ${
@@ -99,13 +98,12 @@ export default function OurStory() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
-        {/* Animated Title */}
         <div className="relative mb-16 w-fit mx-auto">
-          <div className="text-center mb-20 w-fit mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <div className="text-center mb-10 w-fit mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
           Notre Histoire
+          {/* <div className="w-3/4 h-1 bg-[#7C4DFF]/40 mx-auto rounded-full"></div> */}
           </h2>
-          <div className="w-3/4 h-1 bg-[#7C4DFF]/40 mx-auto rounded-full"></div>
         </div>
           <p className="text-[#7C4DFF] text-lg">
             Suivez un processus d'intégration simple et commencez à trader
@@ -113,7 +111,6 @@ export default function OurStory() {
           </p>
         </div>
 
-        {/* Left Content */}
         <div
           className={`relative bg-linear-to-br from-[#080024] to-[#0c0038] border border-[#7C4DFF]/20 rounded-4xl p-16 shadow-2xl transform transition-all duration-1000 ease-out rotate-6 ${
             isVisible ? "opacity-100 translate-x-0 scale-100" : "opacity-0 -translate-x-32 scale-95"
@@ -146,7 +143,6 @@ export default function OurStory() {
           </div>
         </div>
 
-        {/* Right Content (TradingView Widget) */}
         <div
           className={`absolute top-80 right-12 w-100 h-112 bg-white/90 rounded-2xl shadow-2xl z-20 overflow-hidden transition-all duration-1000 ease-out ${
             isVisible ? "opacity-100 translate-x-0 scale-100 rotate-0" : "opacity-0 translate-x-32 scale-95 rotate-3"

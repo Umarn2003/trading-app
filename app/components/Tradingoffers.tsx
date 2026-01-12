@@ -49,7 +49,6 @@ export default function TradingOfferLayered() {
               fill
               className="object-left opacity-20"
             />
-      {/* Heading slides from left */}
       <div
         className={`max-w-xl text-center transition-all duration-1000 ease-out ${
           isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-40"
@@ -67,12 +66,10 @@ export default function TradingOfferLayered() {
         </p>
       </div>
 
-      {/* Image slides from right with 3D parallax */}
       <div
         ref={imageRef}
         className="relative max-w-7xl h-64 md:h-80 transition-transform duration-700"
       >
-        {/* Glow & Depth */}
         <div
           className="absolute inset-0 rounded-2xl blur-2xl"
           style={{
@@ -90,7 +87,6 @@ export default function TradingOfferLayered() {
           />
         </div>
 
-        {/* Floating particles */}
         {isVisible && (
           <>
             <div
@@ -109,7 +105,6 @@ export default function TradingOfferLayered() {
         )}
       </div>
 
-      {/* Particle animation keyframes */}
       <style jsx>{`
         @keyframes float1 {
           0%,

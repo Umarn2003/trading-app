@@ -74,10 +74,8 @@ export default function DesignProcessSection() {
         </div>
 
         <div className="mt-16 overflow-hidden relative">
-          {/* Left Fade */}
           <div className="pointer-events-none absolute inset-y-0 left-0 w-17 bg-linear-to-r from-[#07071b]  via-[#061524]/70 to-transparent z-10" />
 
-          {/* Right Fade */}
           <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-linear-to-l from-[#07071b]  via-[#061524]/70 to-transparent z-10" />
           <motion.div
             className="flex gap-10 w-max"

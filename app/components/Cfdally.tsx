@@ -81,7 +81,6 @@ export default function BenefitsSection() {
     className="object-cover opacity-20"
   />
 
-      {/* ANIMATED BACKGROUND */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-20 w-96 h-96 bg-[#7C4DFF] rounded-full opacity-5 blur-3xl"></div>
         <div className="absolute top-1/2 -right-20 w-96 h-96 bg-[#9D7CFF] rounded-full opacity-5 blur-3xl"></div>
@@ -145,7 +144,6 @@ export default function BenefitsSection() {
       `}</style>
 
       <div className="relative max-w-7xl mx-auto px-6 z-10">
-        {/* HEADER */}
         <div className="text-center mb-20 w-fit mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Votre ALLIÉ CFD
@@ -154,10 +152,8 @@ export default function BenefitsSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* LEFT SIDEBAR */}
           <div className="lg:col-span-4">
             <div className="sticky top-24 bg-linear-to-br from-[#080024] to-[#0c0038] backdrop-blur-xl border border-[#7C4DFF]/30 rounded-3xl p-8 slide-in-left">
-              {/* DECORATIVE ELEMENT */}
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-linear-to-br from-[#7C4DFF] to-[#9D7CFF] rounded-full opacity-20 blur-2xl"></div>
 
               <div className="relative">
@@ -190,13 +186,11 @@ export default function BenefitsSection() {
                   ))}
                 </div>
 
-                {/* DECORATIVE LINES */}
                 <div className="absolute -bottom-4 -left-4 w-32 h-32 border-l-2 border-b-2 border-[#7C4DFF]/20 rounded-bl-3xl"></div>
               </div>
             </div>
           </div>
 
-          {/* BENEFITS GRID */}
           <div className="lg:col-span-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {benefits.map((item, i) => {
@@ -222,14 +216,12 @@ export default function BenefitsSection() {
                       }`}
                   >
                     <div className="benefit-card h-full bg-linear-to-br from-[#080024] to-[#0c0038] backdrop-blur-sm border border-[#7C4DFF]/20 rounded-2xl p-6 hover:bg-[#1a1a3e]/70 group">
-                      {/* ICON CONTAINER */}
                       <div className="relative mb-6 inline-block">
                         <div className="relative w-14 h-14 bg-white rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform float-animation">
                           <Icon className="w-7 h-7 text-[#7C4DFF]" />
                         </div>
                       </div>
 
-                      {/* CONTENT */}
                       <h3 className="text-xl font-bold mb-3 text-transparent bg-clip-text bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF] group-hover:from-[#9D7CFF] group-hover:to-[#7C4DFF] transition-all">
                         {item.title}
                       </h3>
@@ -238,7 +230,6 @@ export default function BenefitsSection() {
                         {item.desc}
                       </p>
 
-                      {/* HOVER INDICATOR */}
                       <div className="mt-4 w-0 h-0.5 bg-linear-to-r from-[#7C4DFF] to-[#9D7CFF] group-hover:w-full transition-all duration-500"></div>
                     </div>
                   </div>
