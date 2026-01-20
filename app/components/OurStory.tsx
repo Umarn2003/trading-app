@@ -102,7 +102,7 @@ export default function OurStory() {
           <div className="text-center mb-10 w-fit mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-white">
           Notre Histoire
-          {/* <div className="w-3/4 h-1 bg-[#7C4DFF]/40 mx-auto rounded-full"></div> */}
+          <div className="w-3/4 h-1 mt-4 bg-[#7C4DFF]/40 mx-auto rounded-full"></div>
           </h2>
         </div>
           <p className="text-[#7C4DFF] text-lg">

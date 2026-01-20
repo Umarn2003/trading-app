@@ -17,22 +17,22 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex items-center gap-3 lg:gap-5  text-white">
-            <Link href="#about" className="hover:text-[#7C4DFF] transition underline underline-offset-4">
+            <Link href="#about" className="hover:text-[#7C4DFF] transition">
               À propos
             </Link>
-            <Link href="#tradingoffers" className="hover:text-[#7C4DFF] transition underline underline-offset-4">
+            <Link href="#tradingoffers" className="hover:text-[#7C4DFF] transition">
               Offres de Trading
             </Link>
-            <Link href="#opportunities" className="hover:text-[#7C4DFF] transition underline underline-offset-4" >
+            <Link href="#opportunities" className="hover:text-[#7C4DFF] transition" >
               Opportunités
             </Link>
-            <Link href="#deposit" className="hover:text-[#7C4DFF] transition underline underline-offset-4">
+            <Link href="#deposit" className="hover:text-[#7C4DFF] transition">
               Dépôt
             </Link>
-            <Link href="#cfdexplaination" className="hover:text-[#7C4DFF] transition underline underline-offset-4">
+            <Link href="#cfdexplaination" className="hover:text-[#7C4DFF]">
               Explication CFD
             </Link>
-            <Link href="#contactus" className="hover:text-[#7C4DFF] transition underline underline-offset-4">
+            <Link href="#contactus" className="hover:text-[#7C4DFF] transition">
               Nous contacter
             </Link>
           </div>
